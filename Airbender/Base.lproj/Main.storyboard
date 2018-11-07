@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AOQ-0Z-0gg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gesture View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GestureViewController" customModule="Airbender" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E3s-bs-aCA">
+                                <rect key="frame" x="20" y="91.5" width="335" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="1yJ-5d-eyw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesture Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jN6-fP-ZTu">
+                                <rect key="frame" x="20" y="391.5" width="335" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Qgn-Bd-bSS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWE-0c-eQS">
+                                <rect key="frame" x="20" y="567" width="335" height="80"/>
+                                <color key="backgroundColor" red="0.72281566259999996" green="0.93074701029999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="tW1-9j-VBl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start Gesture">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartStopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u95-UG-GfB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesture Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7O-Cw-NNq">
+                                <rect key="frame" x="20" y="40" width="335" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nnd-0T-Ix8">
+                                <rect key="frame" x="8" y="28" width="30" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelRecordingPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ita-hu-Ugv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t7O-Cw-NNq" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="20" id="3HQ-4i-ciK"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="bottom" secondItem="eWE-0c-eQS" secondAttribute="bottom" constant="20" id="5P6-2D-jGr"/>
+                            <constraint firstItem="jN6-fP-ZTu" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="20" id="8Ao-rj-mYN"/>
+                            <constraint firstItem="Nnd-0T-Ix8" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="8" id="9zd-uU-gpS"/>
+                            <constraint firstItem="E3s-bs-aCA" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="20" id="Chs-BF-4Q8"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="eWE-0c-eQS" secondAttribute="trailing" constant="20" id="IzJ-Lb-m95"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="E3s-bs-aCA" secondAttribute="trailing" constant="20" id="Pdl-13-rxv"/>
+                            <constraint firstItem="jN6-fP-ZTu" firstAttribute="top" secondItem="E3s-bs-aCA" secondAttribute="bottom" constant="20" id="Ra4-Ul-MJw"/>
+                            <constraint firstItem="E3s-bs-aCA" firstAttribute="top" secondItem="t7O-Cw-NNq" secondAttribute="bottom" constant="20" id="SmA-pj-bi4"/>
+                            <constraint firstItem="Nnd-0T-Ix8" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="8" id="WXD-cw-Hfs"/>
+                            <constraint firstItem="eWE-0c-eQS" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="20" id="jlU-0d-1J4"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="jN6-fP-ZTu" secondAttribute="trailing" constant="20" id="rTW-yA-Wr7"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="t7O-Cw-NNq" secondAttribute="trailing" constant="20" id="rp1-WU-TOy"/>
+                            <constraint firstItem="t7O-Cw-NNq" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="20" id="wMM-aP-QWt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="gestureDescriptionLabel" destination="jN6-fP-ZTu" id="Bbq-Mh-z0X"/>
+                        <outlet property="gestureImageView" destination="E3s-bs-aCA" id="mPU-yp-MR6"/>
+                        <outlet property="gestureNameLabel" destination="t7O-Cw-NNq" id="uyG-sP-JQJ"/>
+                        <outlet property="startStopButton" destination="eWE-0c-eQS" id="N4I-0P-0gA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2104.8000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="1Kt-pE-UmT">
+            <objects>
+                <viewController id="AOQ-0Z-0gg" customClass="MainViewController" customModule="Airbender" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="udS-5t-nx9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participant ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY4-AC-raG">
+                                <rect key="frame" x="20" y="40" width="108" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Euj-rS-yWS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Recordings: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGv-Db-aqc">
+                                <rect key="frame" x="20" y="81" width="182" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="v5N-fj-sZf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Randomize Gestures:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gr-tN-gGo">
+                                <rect key="frame" x="20" y="122" width="164" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5x9-X3-QaE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b58-1b-n9Z">
+                                <rect key="frame" x="148" y="35.5" width="207" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cW-6V-1mi">
+                                <rect key="frame" x="222" y="76.5" width="133" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4lP-j2-Gsr">
+                                <rect key="frame" x="204" y="117" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgj-Z6-3rF">
+                                <rect key="frame" x="20" y="567" width="335" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.52572024514408155" blue="0.057859410082714779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="VIZ-Lv-gG5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start Recording">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startRecording:" destination="AOQ-0Z-0gg" eventType="touchUpInside" id="UHF-XW-6x1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllGestures" translatesAutoresizingMaskIntoConstraints="NO" id="ufP-3R-O7a">
+                                <rect key="frame" x="20" y="163" width="335" height="384"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JY4-AC-raG" firstAttribute="leading" secondItem="3w7-r8-sBJ" secondAttribute="leading" constant="20" id="3c7-eM-mox"/>
+                            <constraint firstItem="9cW-6V-1mi" firstAttribute="centerY" secondItem="vGv-Db-aqc" secondAttribute="centerY" id="4wH-DH-ANp"/>
+                            <constraint firstItem="fgj-Z6-3rF" firstAttribute="leading" secondItem="3w7-r8-sBJ" secondAttribute="leading" constant="20" id="880-Lx-Prw"/>
+                            <constraint firstItem="7Gr-tN-gGo" firstAttribute="top" secondItem="vGv-Db-aqc" secondAttribute="bottom" constant="20" id="CWK-fy-Fcv"/>
+                            <constraint firstItem="4lP-j2-Gsr" firstAttribute="leading" secondItem="7Gr-tN-gGo" secondAttribute="trailing" constant="20" id="Gmc-h5-1Iq"/>
+                            <constraint firstItem="3w7-r8-sBJ" firstAttribute="trailing" secondItem="fgj-Z6-3rF" secondAttribute="trailing" constant="20" id="HUm-Pf-0x9"/>
+                            <constraint firstItem="ufP-3R-O7a" firstAttribute="leading" secondItem="3w7-r8-sBJ" secondAttribute="leading" constant="20" id="HaV-D8-zfa"/>
+                            <constraint firstItem="3w7-r8-sBJ" firstAttribute="trailing" secondItem="ufP-3R-O7a" secondAttribute="trailing" constant="20" id="IA9-Ke-Tjy"/>
+                            <constraint firstItem="3w7-r8-sBJ" firstAttribute="trailing" secondItem="b58-1b-n9Z" secondAttribute="trailing" constant="20" id="Kuo-9o-Lug"/>
+                            <constraint firstItem="b58-1b-n9Z" firstAttribute="centerY" secondItem="JY4-AC-raG" secondAttribute="centerY" id="N2D-Lm-FtP"/>
+                            <constraint firstItem="4lP-j2-Gsr" firstAttribute="centerY" secondItem="7Gr-tN-gGo" secondAttribute="centerY" id="OJ3-6g-9UN"/>
+                            <constraint firstItem="JY4-AC-raG" firstAttribute="top" secondItem="3w7-r8-sBJ" secondAttribute="top" constant="20" id="Vm2-ZP-VdU"/>
+                            <constraint firstItem="vGv-Db-aqc" firstAttribute="leading" secondItem="3w7-r8-sBJ" secondAttribute="leading" constant="20" id="Vs9-Ld-3rb"/>
+                            <constraint firstItem="3w7-r8-sBJ" firstAttribute="trailing" secondItem="9cW-6V-1mi" secondAttribute="trailing" constant="20" id="Xgz-4R-Rr5"/>
+                            <constraint firstItem="9cW-6V-1mi" firstAttribute="leading" secondItem="vGv-Db-aqc" secondAttribute="trailing" constant="20" id="Xqp-eL-cOE"/>
+                            <constraint firstItem="fgj-Z6-3rF" firstAttribute="top" secondItem="ufP-3R-O7a" secondAttribute="bottom" constant="20" id="dXu-2R-s4p"/>
+                            <constraint firstItem="b58-1b-n9Z" firstAttribute="leading" secondItem="JY4-AC-raG" secondAttribute="trailing" constant="20" id="f3k-Bs-YHd"/>
+                            <constraint firstItem="ufP-3R-O7a" firstAttribute="top" secondItem="7Gr-tN-gGo" secondAttribute="bottom" constant="20" id="gPG-FG-Mg6"/>
+                            <constraint firstItem="vGv-Db-aqc" firstAttribute="top" secondItem="JY4-AC-raG" secondAttribute="bottom" constant="20" id="hKe-xl-Wsp"/>
+                            <constraint firstItem="7Gr-tN-gGo" firstAttribute="leading" secondItem="3w7-r8-sBJ" secondAttribute="leading" constant="20" id="ilm-aR-OMK"/>
+                            <constraint firstItem="3w7-r8-sBJ" firstAttribute="bottom" secondItem="fgj-Z6-3rF" secondAttribute="bottom" constant="20" id="vUu-M9-hKq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3w7-r8-sBJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dAB-VC-idS"/>
+                    <connections>
+                        <outlet property="participantIdTextField" destination="b58-1b-n9Z" id="Nmc-gl-Eiw"/>
+                        <outlet property="randomizedGesturesSwitch" destination="4lP-j2-Gsr" id="2l0-xn-zp9"/>
+                        <outlet property="recordingsNoTextField" destination="9cW-6V-1mi" id="lv7-e4-RRQ"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="GestureControllerSegue" id="XL6-q9-zhQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9eD-Ey-1Th" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1284" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AllGestures" width="1686" height="2345"/>
+    </resources>
+</document>
