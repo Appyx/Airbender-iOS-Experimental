@@ -2,47 +2,52 @@
 //  ProcessingEngine.swift
 //  Airbender
 //
-//  Created by Robert Gstöttner on 10.12.18.
+//  Created by Christopher Ebner on 10.12.18.
 //  Copyright © 2018 FH Hagenberg. All rights reserved.
 //
 
 import Foundation
 
-class ProcessingEngine {
-    
+class RecordingEngine {
     let commManager = CommunicationManager.shared
-    var buffer = [RawData]()
-    
+    var recordedData = [RawData]()
+
     init() {
         commManager.delegate = self
         commManager.startSession()
     }
     
     func clear() {
-        buffer.removeAll()
+        recordedData.removeAll()
     }
     
-    
-    func gestureComplete(){
-        //do something with recorded data
+    func startRecording(){
+        commManager.send(message: Message(type: .Control).with(text: "start-recording"))
     }
     
+    func stopRecording(){
+        commManager.send(message: Message(type: .Control).with(text: "stop-recording"))
+    }
+    
+    func save(participant:String,gesture:Int){
+        let data = Sample(user: participant, gesture: gesture, rawData: recordedData)
+        let exporter=CSVExporter()
+        print("exported: \(exporter.export(recording: data))")
+    }
 }
 
-extension ProcessingEngine: CommunicationManagerDelegate {
-    
+extension RecordingEngine: CommunicationManagerDelegate {
+
     func managerDidReceiveMessage(message: Message) {
         if message.type == .Control && message.getText() == "start-gesture" {
             print("gesture started...")
-            clear()
         }
         if message.type == .Control && message.getText() == "stop-gesture" {
             print("gesture stopped...")
-            gestureComplete()
         }
         if message.type == .Data {
             if let data = message.getData() {
-                buffer.append(data)
+                recordedData.append(data)
             }
         }
     }

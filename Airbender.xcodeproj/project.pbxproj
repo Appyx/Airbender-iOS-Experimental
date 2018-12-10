@@ -33,9 +33,10 @@
 		62EB69C521BEC77300383BB9 /* MLClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69C321BEC77300383BB9 /* MLClassifier.swift */; };
 		62EB69C721BED44B00383BB9 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D482185146500E47C4C /* Sample.swift */; };
 		62EB69CB21BED52B00383BB9 /* CSVImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69CA21BED52B00383BB9 /* CSVImporter.swift */; };
-		62EB69CE21BED5FC00383BB9 /* ProcessingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69CD21BED5FC00383BB9 /* ProcessingEngine.swift */; };
+		62EB69CE21BED5FC00383BB9 /* RecordingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */; };
 		E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
 		E10D1ED921BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
+		E10D1EDE21BF0E05006B1976 /* ProcessingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */; };
 		E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A37219077C700A1CA0F /* FileWriter.swift */; };
 		E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A38219077C700A1CA0F /* CSVExporter.swift */; };
 /* End PBXBuildFile section */
@@ -128,8 +129,9 @@
 		62EB69C221BEC77300383BB9 /* MLPreProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLPreProcessor.swift; sourceTree = "<group>"; };
 		62EB69C321BEC77300383BB9 /* MLClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLClassifier.swift; sourceTree = "<group>"; };
 		62EB69CA21BED52B00383BB9 /* CSVImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVImporter.swift; sourceTree = "<group>"; };
-		62EB69CD21BED5FC00383BB9 /* ProcessingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingEngine.swift; sourceTree = "<group>"; };
+		62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingEngine.swift; sourceTree = "<group>"; };
 		E10D1ED721BDE0BC006B1976 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingEngine.swift; sourceTree = "<group>"; };
 		E1DF4A37219077C700A1CA0F /* FileWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
 		E1DF4A38219077C700A1CA0F /* CSVExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVExporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +238,7 @@
 		3A37761421822FF900FF685C /* Recording */ = {
 			isa = PBXGroup;
 			children = (
+				62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */,
 				62347BD72185CCAC0025CAD1 /* GesturePresenter.swift */,
 			);
 			path = Recording;
@@ -290,7 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				3A354ECD2182196E0054DE2C /* AppDelegate.swift */,
-				62EB69CD21BED5FC00383BB9 /* ProcessingEngine.swift */,
+				E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -518,12 +521,13 @@
 				62EB69CB21BED52B00383BB9 /* CSVImporter.swift in Sources */,
 				3AF2FAC0218520C0007CFA4E /* CommunicationManager.swift in Sources */,
 				621B7D4D218528E100E47C4C /* GestureViewController.swift in Sources */,
+				E10D1EDE21BF0E05006B1976 /* ProcessingEngine.swift in Sources */,
 				E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */,
 				621B7D472185125800E47C4C /* RawData.swift in Sources */,
 				3A354ED02182196E0054DE2C /* MainViewController.swift in Sources */,
 				E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */,
 				3A354ECE2182196E0054DE2C /* AppDelegate.swift in Sources */,
-				62EB69CE21BED5FC00383BB9 /* ProcessingEngine.swift in Sources */,
+				62EB69CE21BED5FC00383BB9 /* RecordingEngine.swift in Sources */,
 				62347BD82185CCAC0025CAD1 /* GesturePresenter.swift in Sources */,
 				621B7D492185146500E47C4C /* Sample.swift in Sources */,
 				62EB69C421BEC77300383BB9 /* MLPreProcessor.swift in Sources */,
