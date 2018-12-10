@@ -67,11 +67,13 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
     }
 
     func startGesture() {
+        motionManager.startMotionUpdates()
         startWorkout()
         sendStart()
     }
 
     func stopGesture() {
+        motionManager.stopMotionUpdates()
         stopWorkout()
         sendStop()
     }

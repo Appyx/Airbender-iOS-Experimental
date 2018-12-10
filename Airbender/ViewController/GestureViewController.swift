@@ -20,7 +20,6 @@ class GestureViewController: UIViewController {
     var gestureManager: GestureManager!
     var exporter: CSVExporter!
     var actualGestureID: Int? = nil
-    var lastRecordedGesture = [RawData]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +43,7 @@ class GestureViewController: UIViewController {
 
     private func saveGesture() {
         if let id = actualGestureID {
-            let data = LabeledRecording(user: gestureManager.participant, gesture: id, rawData: lastRecordedGesture)
+            let data = LabeledRecording(user: gestureManager.participant, gesture: id, rawData: recordedData)
             print("exported: \(exporter.export(recording: data))")
         }
     }
