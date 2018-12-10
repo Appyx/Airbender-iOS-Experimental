@@ -22,6 +22,10 @@ class MainViewController: UIViewController {
         self.hideKeyboardWhenTappedAround()
     }
 
+    @IBAction func cancelButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        
+    }
     @IBAction func startRecording(_ sender: Any?) {
         guard commManager.session!.isReachable else {
             presentAlert(title: "Error!", msg: "Open the app on your Apple Watch")

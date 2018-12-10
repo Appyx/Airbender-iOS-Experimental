@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2104.8000000000002" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2466" y="-2093"/>
         </scene>
         <!--History-->
         <scene sceneID="W8L-RD-tuW">
@@ -205,7 +205,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="icon_home" id="Kua-kl-x4t"/>
                     <connections>
-                        <outlet property="gestureImageView" destination="yt9-2v-c5I" id="OHv-4A-JjE"/>
+                        <outlet property="gestureImageView" destination="yt9-2v-c5I" id="TH2-Dg-rkL"/>
                         <outlet property="gestureNameLabel" destination="9nS-hv-wji" id="MHO-cM-Y8O"/>
                     </connections>
                 </viewController>
@@ -283,7 +283,7 @@
                                 <rect key="frame" x="204" y="117" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgj-Z6-3rF">
-                                <rect key="frame" x="20" y="567" width="335" height="80"/>
+                                <rect key="frame" x="20" y="487" width="335" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.52572024514408155" blue="0.057859410082714779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="VIZ-Lv-gG5"/>
@@ -297,15 +297,32 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllGestures" translatesAutoresizingMaskIntoConstraints="NO" id="ufP-3R-O7a">
-                                <rect key="frame" x="20" y="163" width="335" height="384"/>
+                                <rect key="frame" x="20" y="163" width="335" height="304"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZ2-QR-0IJ">
+                                <rect key="frame" x="20" y="575" width="335" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.52572024510000004" blue="0.05785941008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="weC-ME-Ghy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButton:" destination="AOQ-0Z-0gg" eventType="touchUpInside" id="teM-Lu-ttJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="3w7-r8-sBJ" firstAttribute="bottom" secondItem="QZ2-QR-0IJ" secondAttribute="bottom" constant="12" id="31D-BX-fjo"/>
                             <constraint firstItem="JY4-AC-raG" firstAttribute="leading" secondItem="3w7-r8-sBJ" secondAttribute="leading" constant="20" id="3c7-eM-mox"/>
                             <constraint firstItem="9cW-6V-1mi" firstAttribute="centerY" secondItem="vGv-Db-aqc" secondAttribute="centerY" id="4wH-DH-ANp"/>
                             <constraint firstItem="fgj-Z6-3rF" firstAttribute="leading" secondItem="3w7-r8-sBJ" secondAttribute="leading" constant="20" id="880-Lx-Prw"/>
                             <constraint firstItem="7Gr-tN-gGo" firstAttribute="top" secondItem="vGv-Db-aqc" secondAttribute="bottom" constant="20" id="CWK-fy-Fcv"/>
+                            <constraint firstItem="QZ2-QR-0IJ" firstAttribute="top" secondItem="fgj-Z6-3rF" secondAttribute="bottom" constant="8" id="Djj-r7-HQN"/>
+                            <constraint firstItem="QZ2-QR-0IJ" firstAttribute="leading" secondItem="3w7-r8-sBJ" secondAttribute="leading" constant="20" id="Ghr-CO-frf"/>
                             <constraint firstItem="4lP-j2-Gsr" firstAttribute="leading" secondItem="7Gr-tN-gGo" secondAttribute="trailing" constant="20" id="Gmc-h5-1Iq"/>
                             <constraint firstItem="3w7-r8-sBJ" firstAttribute="trailing" secondItem="fgj-Z6-3rF" secondAttribute="trailing" constant="20" id="HUm-Pf-0x9"/>
                             <constraint firstItem="ufP-3R-O7a" firstAttribute="leading" secondItem="3w7-r8-sBJ" secondAttribute="leading" constant="20" id="HaV-D8-zfa"/>
@@ -317,12 +334,12 @@
                             <constraint firstItem="vGv-Db-aqc" firstAttribute="leading" secondItem="3w7-r8-sBJ" secondAttribute="leading" constant="20" id="Vs9-Ld-3rb"/>
                             <constraint firstItem="3w7-r8-sBJ" firstAttribute="trailing" secondItem="9cW-6V-1mi" secondAttribute="trailing" constant="20" id="Xgz-4R-Rr5"/>
                             <constraint firstItem="9cW-6V-1mi" firstAttribute="leading" secondItem="vGv-Db-aqc" secondAttribute="trailing" constant="20" id="Xqp-eL-cOE"/>
+                            <constraint firstItem="3w7-r8-sBJ" firstAttribute="trailing" secondItem="QZ2-QR-0IJ" secondAttribute="trailing" constant="20" id="Z7c-l4-n9a"/>
                             <constraint firstItem="fgj-Z6-3rF" firstAttribute="top" secondItem="ufP-3R-O7a" secondAttribute="bottom" constant="20" id="dXu-2R-s4p"/>
                             <constraint firstItem="b58-1b-n9Z" firstAttribute="leading" secondItem="JY4-AC-raG" secondAttribute="trailing" constant="20" id="f3k-Bs-YHd"/>
                             <constraint firstItem="ufP-3R-O7a" firstAttribute="top" secondItem="7Gr-tN-gGo" secondAttribute="bottom" constant="20" id="gPG-FG-Mg6"/>
                             <constraint firstItem="vGv-Db-aqc" firstAttribute="top" secondItem="JY4-AC-raG" secondAttribute="bottom" constant="20" id="hKe-xl-Wsp"/>
                             <constraint firstItem="7Gr-tN-gGo" firstAttribute="leading" secondItem="3w7-r8-sBJ" secondAttribute="leading" constant="20" id="ilm-aR-OMK"/>
-                            <constraint firstItem="3w7-r8-sBJ" firstAttribute="bottom" secondItem="fgj-Z6-3rF" secondAttribute="bottom" constant="20" id="vUu-M9-hKq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3w7-r8-sBJ"/>
                     </view>
@@ -336,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9eD-Ey-1Th" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1284" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1646" y="-2093"/>
         </scene>
         <!--Settings-->
         <scene sceneID="4PF-QA-Ljg">
@@ -345,7 +362,21 @@
                     <view key="view" contentMode="scaleToFill" id="2r4-HG-g7F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85y-hi-O5X">
+                                <rect key="frame" x="0.0" y="538" width="375" height="30"/>
+                                <state key="normal" title="Start Recording"/>
+                                <connections>
+                                    <segue destination="AOQ-0Z-0gg" kind="show" id="IIf-iq-kHV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yeI-CK-OxK" firstAttribute="trailing" secondItem="85y-hi-O5X" secondAttribute="trailing" id="G4P-3z-oeQ"/>
+                            <constraint firstItem="85y-hi-O5X" firstAttribute="leading" secondItem="yeI-CK-OxK" secondAttribute="leading" id="QeH-QE-s8Q"/>
+                            <constraint firstItem="yeI-CK-OxK" firstAttribute="bottom" secondItem="85y-hi-O5X" secondAttribute="bottom" constant="50" id="np7-j3-WaI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yeI-CK-OxK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="icon_settings" id="Sfr-NO-X6D"/>

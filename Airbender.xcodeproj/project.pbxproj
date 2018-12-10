@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D5158B97D59FBE06BBB29EF /* Pods_AirbenderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DF2BBE572E1F5F7F22A2F2 /* Pods_AirbenderUITests.framework */; };
+		1D5158B97D59FBE06BBB29EF /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		3A354ECE2182196E0054DE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354ECD2182196E0054DE2C /* AppDelegate.swift */; };
 		3A354ED02182196E0054DE2C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354ECF2182196E0054DE2C /* MainViewController.swift */; };
 		3A354ED32182196E0054DE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A354ED12182196E0054DE2C /* Main.storyboard */; };
@@ -21,8 +21,6 @@
 		3A354F092182196F0054DE2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354F082182196F0054DE2C /* ExtensionDelegate.swift */; };
 		3A354F0D218219700054DE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A354F0C218219700054DE2C /* Assets.xcassets */; };
 		3AEDABF121BF0D7E0048C5EC /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF021BF0D7E0048C5EC /* InfoViewController.swift */; };
-		3AEDABF321BF0D910048C5EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF221BF0D910048C5EC /* HomeViewController.swift */; };
-		3AEDABF521BF10AF0048C5EC /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF421BF10AF0048C5EC /* HistoryTableViewController.swift */; };
 		3AEDABF821BF13350048C5EC /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF721BF13350048C5EC /* HistoryTableViewCell.swift */; };
 		3AEDABFB21BF19BB0048C5EC /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABFA21BF19BB0048C5EC /* Gesture.swift */; };
 		3AF2FAC0218520C0007CFA4E /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */; };
@@ -40,11 +38,18 @@
 		62EB69C721BED44B00383BB9 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D482185146500E47C4C /* Sample.swift */; };
 		62EB69CB21BED52B00383BB9 /* CSVImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69CA21BED52B00383BB9 /* CSVImporter.swift */; };
 		62EB69CE21BED5FC00383BB9 /* RecordingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */; };
+		84C0CFEA722B189F72B49ED5 /* Pods_Airbender_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02265D78E071369E5EB2FB3F /* Pods_Airbender_WatchKit_Extension.framework */; };
+		9419755D4D3DBCEE07935B65 /* Pods_AirbenderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DB905CF646D8ECC5439FCE /* Pods_AirbenderTests.framework */; };
+		97969573295719E697BA8427 /* Pods_Airbender_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10AB72C7B29E71867D694089 /* Pods_Airbender_WatchKit_App.framework */; };
+		AF4A15AF12DAB5F00928468E /* Pods_AirbenderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717A1241B6B5E67E0B6852BA /* Pods_AirbenderUITests.framework */; };
 		E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
 		E10D1ED921BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
 		E10D1EDE21BF0E05006B1976 /* ProcessingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */; };
+		E126296B21BF277E009D3D21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF221BF0D910048C5EC /* HomeViewController.swift */; };
+		E126296C21BF2783009D3D21 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF421BF10AF0048C5EC /* HistoryTableViewController.swift */; };
 		E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A37219077C700A1CA0F /* FileWriter.swift */; };
 		E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A38219077C700A1CA0F /* CSVExporter.swift */; };
+		FAD242F9E43D7679DF3EA8D6 /* Pods_Airbender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0A2B56C9F61179C4F250C1 /* Pods_Airbender.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +140,10 @@
 		3AEDABF721BF13350048C5EC /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		3AEDABFA21BF19BB0048C5EC /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
 		3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
+		42095FD638B19475BA95DB15 /* Pods-AirbenderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderUITests/Pods-AirbenderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42E1AD7D3F65D7B03E4D03D9 /* Pods-AirbenderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderUITests/Pods-AirbenderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D0A2B56C9F61179C4F250C1 /* Pods_Airbender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airbender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51134A5A1304C513BE1A2868 /* Pods-Airbender WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit App/Pods-Airbender WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		59C1EF2D65AF46CD9F415626 /* Pods-AirbenderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderTests/Pods-AirbenderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		621B7D462185125800E47C4C /* RawData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawData.swift; sourceTree = "<group>"; };
 		621B7D482185146500E47C4C /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
@@ -148,11 +157,14 @@
 		62EB69C321BEC77300383BB9 /* MLClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLClassifier.swift; sourceTree = "<group>"; };
 		62EB69CA21BED52B00383BB9 /* CSVImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVImporter.swift; sourceTree = "<group>"; };
 		62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingEngine.swift; sourceTree = "<group>"; };
+		717A1241B6B5E67E0B6852BA /* Pods_AirbenderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirbenderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CAC9142F839818C8B647D53 /* Pods-AirbenderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderTests/Pods-AirbenderTests.release.xcconfig"; sourceTree = "<group>"; };
 		E10D1ED721BDE0BC006B1976 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingEngine.swift; sourceTree = "<group>"; };
 		E1DF4A37219077C700A1CA0F /* FileWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
 		E1DF4A38219077C700A1CA0F /* CSVExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVExporter.swift; sourceTree = "<group>"; };
 		E6F6CC0BD652703DCEC80ED6 /* Pods-Airbender WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit App/Pods-Airbender WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		EEA407B2CC443E758CAE0591 /* Pods-Airbender WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit Extension/Pods-Airbender WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62347BE8218678C00025CAD1 /* HealthKit.framework in Frameworks */,
-				68D6B00ECFD7CCF6CD30B892 /* Pods_Airbender.framework in Frameworks */,
+				FAD242F9E43D7679DF3EA8D6 /* Pods_Airbender.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF113E4BFF8B5C33BB43BBAB /* Pods_AirbenderTests.framework in Frameworks */,
+				9419755D4D3DBCEE07935B65 /* Pods_AirbenderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +189,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D5158B97D59FBE06BBB29EF /* Pods_AirbenderUITests.framework in Frameworks */,
+				1D5158B97D59FBE06BBB29EF /* (null) in Frameworks */,
+				AF4A15AF12DAB5F00928468E /* Pods_AirbenderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62347BE6218678B30025CAD1 /* HealthKit.framework in Frameworks */,
-				B7313C39BBBEAF9B73872273 /* Pods_Airbender_WatchKit_Extension.framework in Frameworks */,
+				84C0CFEA722B189F72B49ED5 /* Pods_Airbender_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7CE823BBA570AABE314DBB2 /* Pods_Airbender_WatchKit_App.framework in Frameworks */,
+				97969573295719E697BA8427 /* Pods_Airbender_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,11 +324,11 @@
 			children = (
 				62347BE7218678C00025CAD1 /* HealthKit.framework */,
 				62347BE5218678B30025CAD1 /* HealthKit.framework */,
-				BEFC07513153DA8FE4A298DA /* Pods_Airbender.framework */,
 				10AB72C7B29E71867D694089 /* Pods_Airbender_WatchKit_App.framework */,
 				02265D78E071369E5EB2FB3F /* Pods_Airbender_WatchKit_Extension.framework */,
 				14DB905CF646D8ECC5439FCE /* Pods_AirbenderTests.framework */,
-				84DF2BBE572E1F5F7F22A2F2 /* Pods_AirbenderUITests.framework */,
+				4D0A2B56C9F61179C4F250C1 /* Pods_Airbender.framework */,
+				717A1241B6B5E67E0B6852BA /* Pods_AirbenderUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -361,14 +374,14 @@
 			children = (
 				2ED7CC2DE16940BBBB5258A4 /* Pods-Airbender.debug.xcconfig */,
 				29B7CD843BAB0A2BBC0447AA /* Pods-Airbender.release.xcconfig */,
-				D73694642EC5A6077213CEF2 /* Pods-Airbender WatchKit App.debug.xcconfig */,
 				E6F6CC0BD652703DCEC80ED6 /* Pods-Airbender WatchKit App.release.xcconfig */,
 				0C731C9A8CFC43A2E5D97377 /* Pods-Airbender WatchKit Extension.debug.xcconfig */,
-				BFBB635F68AE951CB07EE2A5 /* Pods-Airbender WatchKit Extension.release.xcconfig */,
 				59C1EF2D65AF46CD9F415626 /* Pods-AirbenderTests.debug.xcconfig */,
-				8DDB065BDBD5014877FA14E9 /* Pods-AirbenderTests.release.xcconfig */,
-				DE5CC5C43113EA3698B6B171 /* Pods-AirbenderUITests.debug.xcconfig */,
-				CADDE0903C9F112546116FCD /* Pods-AirbenderUITests.release.xcconfig */,
+				51134A5A1304C513BE1A2868 /* Pods-Airbender WatchKit App.debug.xcconfig */,
+				EEA407B2CC443E758CAE0591 /* Pods-Airbender WatchKit Extension.release.xcconfig */,
+				8CAC9142F839818C8B647D53 /* Pods-AirbenderTests.release.xcconfig */,
+				42E1AD7D3F65D7B03E4D03D9 /* Pods-AirbenderUITests.debug.xcconfig */,
+				42095FD638B19475BA95DB15 /* Pods-AirbenderUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -735,7 +748,9 @@
 			files = (
 				3AEDABF821BF13350048C5EC /* HistoryTableViewCell.swift in Sources */,
 				E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */,
+				E126296B21BF277E009D3D21 /* HomeViewController.swift in Sources */,
 				62EB69C521BEC77300383BB9 /* MLClassifier.swift in Sources */,
+				E126296C21BF2783009D3D21 /* HistoryTableViewController.swift in Sources */,
 				62EB69CB21BED52B00383BB9 /* CSVImporter.swift in Sources */,
 				3AF2FAC0218520C0007CFA4E /* CommunicationManager.swift in Sources */,
 				3AEDABF121BF0D7E0048C5EC /* InfoViewController.swift in Sources */,
@@ -977,7 +992,7 @@
 		};
 		3A354F14218219700054DE2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFBB635F68AE951CB07EE2A5 /* Pods-Airbender WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = EEA407B2CC443E758CAE0591 /* Pods-Airbender WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "Airbender WatchKit Extension/Airbender WatchKit Extension.entitlements";
@@ -1001,7 +1016,7 @@
 		};
 		3A354F17218219700054DE2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D73694642EC5A6077213CEF2 /* Pods-Airbender WatchKit App.debug.xcconfig */;
+			baseConfigurationReference = 51134A5A1304C513BE1A2868 /* Pods-Airbender WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1107,7 +1122,7 @@
 		};
 		3A354F1F218219700054DE2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DDB065BDBD5014877FA14E9 /* Pods-AirbenderTests.release.xcconfig */;
+			baseConfigurationReference = 8CAC9142F839818C8B647D53 /* Pods-AirbenderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1129,7 +1144,7 @@
 		};
 		3A354F21218219700054DE2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE5CC5C43113EA3698B6B171 /* Pods-AirbenderUITests.debug.xcconfig */;
+			baseConfigurationReference = 42E1AD7D3F65D7B03E4D03D9 /* Pods-AirbenderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1150,7 +1165,7 @@
 		};
 		3A354F22218219700054DE2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CADDE0903C9F112546116FCD /* Pods-AirbenderUITests.release.xcconfig */;
+			baseConfigurationReference = 42095FD638B19475BA95DB15 /* Pods-AirbenderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
