@@ -17,9 +17,9 @@ class MLPreProcessor {
         rawData = data               
     }
     
-    init(data: [[Double]]) {
+//    init(data: [[Double]]) {
 //        rawData = data
-    }
+//    }
     
     func interpolate(toSize: Int) {
         // https://stackoverflow.com/questions/53212548/swift-linear-interpolation-and-upsampling
