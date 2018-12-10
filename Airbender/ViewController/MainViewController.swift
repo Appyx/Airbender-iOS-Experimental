@@ -37,7 +37,7 @@ class MainViewController: UIViewController {
             presentAlert(title: "Error!", msg: "Enter the number of recordings")
             return
         }
-        let manger = GestureManager(participant: name, numberOfRecordings: number)
+        let manger = GesturePresenter(participant: name, numberOfRecordings: number)
         performSegue(withIdentifier: "GestureControllerSegue", sender: manger)
     }
 
@@ -50,7 +50,7 @@ class MainViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! GestureViewController
-        vc.gestureManager = sender as? GestureManager
+        vc.gestureManager = sender as? GesturePresenter
     }
 
 }

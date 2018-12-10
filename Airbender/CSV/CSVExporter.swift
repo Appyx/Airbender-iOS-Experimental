@@ -17,7 +17,7 @@ class CSVExporter {
     let gyrZWriter = FileWriter().using(file: "gyr_z.csv")
 
 
-    func export(recording: LabeledRecording) -> Bool {
+    func export(recording: Sample) -> Bool {
         let header = "\(recording.user);"
             + "\(recording.name);"
 

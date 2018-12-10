@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LabeledRecording{
+class Sample{
     var user: String
     var name: Int
     var data: [RawData]

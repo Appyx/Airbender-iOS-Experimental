@@ -9,7 +9,6 @@
 import UIKit
 
 class GestureViewController: UIViewController {
-
     @IBOutlet weak var gestureNameLabel: UILabel!
     @IBOutlet weak var gestureImageView: UIImageView!
     @IBOutlet weak var gestureDescriptionLabel: UILabel!
@@ -17,7 +16,7 @@ class GestureViewController: UIViewController {
 
     let commManager = CommunicationManager.shared
     var recordedData = [RawData]()
-    var gestureManager: GestureManager!
+    var gestureManager: GesturePresenter!
     var exporter: CSVExporter!
     var actualGestureID: Int? = nil
 
@@ -43,7 +42,7 @@ class GestureViewController: UIViewController {
 
     private func saveGesture() {
         if let id = actualGestureID {
-            let data = LabeledRecording(user: gestureManager.participant, gesture: id, rawData: recordedData)
+            let data = Sample(user: gestureManager.participant, gesture: id, rawData: recordedData)
             print("exported: \(exporter.export(recording: data))")
         }
     }
