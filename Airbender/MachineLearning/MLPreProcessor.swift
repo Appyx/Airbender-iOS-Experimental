@@ -21,12 +21,38 @@ class MLPreProcessor {
 //        rawData = data
 //    }
     
-    func interpolate(toSize: Int) {
-        // https://stackoverflow.com/questions/53212548/swift-linear-interpolation-and-upsampling
+//    func resample(toSize: Int) {
+//        let dataCount = rawData.data.count
+//        if dataCount < toSize {
+//            upsample(from: toSize, to: toSize)
+//        } else if dataCount > toSize {
+//            downsample(from: toSize, to: toSize)
+//        }
+//    }
+    
+    private func resample(data: [Double], toSize: Int) {
+        let sampleFactor = Double(data.count) / Double(toSize)
+        var fraction = 0.00
         
-
+        print("sample factor: \(sampleFactor)")
+        print("dataSize: \(data.count)")
+        
+        var sampledData = [Double]()
+        var i = 0
+        while i < data.count {
+            let step = Int(floor(sampleFactor + fraction))
+            fraction = (sampleFactor + fraction).truncatingRemainder(dividingBy: 1) + 0.000001
+            
+            sampledData.append(data[i])
+            i += step
+        }
+        
+        print("dataSizeDownSampled: \(sampledData.count)")
     }
     
+    
+    
 //    func convertTo
+    
 }
 
