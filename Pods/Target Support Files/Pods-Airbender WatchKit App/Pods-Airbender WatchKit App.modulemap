@@ -1,0 +1,6 @@
+framework module Pods_Airbender_WatchKit_App {
+  umbrella header "Pods-Airbender WatchKit App-umbrella.h"
+
+  export *
+  module * { export * }
+}

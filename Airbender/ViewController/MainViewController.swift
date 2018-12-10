@@ -20,10 +20,12 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        commManager.delegate = self
-        commManager.startSession()
     }
 
+    @IBAction func cancelButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        
+    }
     @IBAction func startRecording(_ sender: Any?) {
         guard commManager.session!.isReachable else {
             presentAlert(title: "Error!", msg: "Open the app on your Apple Watch")
@@ -37,8 +39,8 @@ class MainViewController: UIViewController {
             presentAlert(title: "Error!", msg: "Enter the number of recordings")
             return
         }
-        let manger = GesturePresenter(participant: name, numberOfRecordings: number)
-        performSegue(withIdentifier: "GestureControllerSegue", sender: manger)
+        let presenter = GesturePresenter(participant: name, numberOfRecordings: number)
+        performSegue(withIdentifier: "GestureControllerSegue", sender: presenter)
     }
 
     private func presentAlert(title: String, msg: String) {
@@ -50,15 +52,9 @@ class MainViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! GestureViewController
-        vc.gestureManager = sender as? GesturePresenter
+        vc.presenter = sender as? GesturePresenter
     }
 
-}
-
-extension MainViewController: CommunicationManagerDelegate {
-    func managerDidReceiveMessage(message: Message) {
-
-    }
 }
 
 extension UIViewController {
