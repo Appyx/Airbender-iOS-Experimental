@@ -8,75 +8,45 @@
 
 import UIKit
 
-class GestureViewController: UIViewController, WatchSessionManagerDelegate {
+class GestureViewController: UIViewController {
+
     @IBOutlet weak var gestureNameLabel: UILabel!
     @IBOutlet weak var gestureImageView: UIImageView!
     @IBOutlet weak var gestureDescriptionLabel: UILabel!
     @IBOutlet weak var startStopButton: UIButton!
 
-    var gestureIsRecoring = false
-
-    let connectivityManager = WatchSessionManager.shared
-
+    let commManager = CommunicationManager.shared
+    var recordedData = [RawData]()
     var gestureManager: GestureManager!
     var exporter: CSVExporter!
     var actualGestureID: Int? = nil
-
-    var recordedData = [RawData]()
     var lastRecordedGesture = [RawData]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        connectivityManager.delegate = self
-        connectivityManager.startSession()
+        commManager.delegate = self
+        commManager.startSession()
         exporter = CSVExporter()
         startRecording()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         loadNextGesture()
-
-    }
-
-
-    @IBAction func StartStopButtonPressed(_ sender: UIButton) {
-        gestureIsRecoring = !gestureIsRecoring
-        if gestureIsRecoring {
-            sender.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
-            sender.setTitle("Stop Gesture", for: .normal)
-            startGestureRecording()
-        } else {
-            sender.backgroundColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
-            sender.setTitle("Start Gesture", for: .normal)
-            lastRecordedGesture = recordedData
-            presentRetryAlert()
-        }
     }
 
     func startRecording() {
+        commManager.send(message: Message(type: .Control).with(text: "start-recording"))
     }
 
-    private func startGestureRecording() {
-        recordedData.removeAll()
+    func stopRecording() {
+        commManager.send(message: Message(type: .Control).with(text: "stop-recording"))
     }
 
-    private func retryRecording() {
-        recordedData.removeAll()
-    }
-
-    private func saveRecordedGesture() {
+    private func saveGesture() {
         if let id = actualGestureID {
             let data = LabeledRecording(user: gestureManager.participant, gesture: id, rawData: lastRecordedGesture)
             print("exported: \(exporter.export(recording: data))")
         }
-    }
-
-    private func recordingFinished() {
-        connectivityManager.session?.sendMessage(["control": "stop"], replyHandler: nil, errorHandler: nil)
-    }
-
-    private func recordingCancled() {
-        connectivityManager.session?.sendMessage(["control": "stop"], replyHandler: nil, errorHandler: nil)
     }
 
     private func loadNextGesture() {
@@ -87,42 +57,53 @@ class GestureViewController: UIViewController, WatchSessionManagerDelegate {
             gestureImageView.image = actualGesture.image
             gestureDescriptionLabel.text = actualGesture.description
         } else {
-            recordingFinished()
+            stopRecording()
             dismiss(animated: true, completion: nil)
         }
     }
 
-
-
     private func presentRetryAlert() {
         let alert = UIAlertController(title: "Gesture finished!", message: "Was the recording successful or do you want to retry?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Save Recording", style: .default, handler: { _ in
-            self.saveRecordedGesture()
+            self.saveGesture()
             self.loadNextGesture()
         }))
         alert.addAction(UIAlertAction(title: "Retry", style: .cancel, handler: { _ in
-            self.retryRecording()
+            self.recordedData = []
         }))
         present(alert, animated: true, completion: nil)
     }
 
-    private func presentRCancelAlert() {
-        let alert = UIAlertController(title: "Stop Recording Pressed!", message: "Do you really want to Stop the whole recording?", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Stop and go back", style: .default, handler: { _ in
-            self.recordingCancled()
+    private func presentCancelAlert() {
+        let alert = UIAlertController(title: "Stop Recording Pressed!", message: "Do you really want to stop the whole recording?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Stop", style: .default, handler: { _ in
+            self.stopRecording()
             self.dismiss(animated: true, completion: nil)
         }))
-        alert.addAction(UIAlertAction(title: "Resume the Recording", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Resume", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
     }
 
-
-    @IBAction func cancelRecordingPressed(_ sender: Any) {
-        presentRCancelAlert()
+    @IBAction func cancelRecording(_ sender: Any) {
+        presentCancelAlert()
     }
+}
 
-    func managerDidReceiveMessage(message: [String: Any]) {
-        recordedData.append(RawData(dict: message))
+extension GestureViewController: CommunicationManagerDelegate {
+
+    func managerDidReceiveMessage(message: Message) {
+        if message.type == .Control && message.getText() == "start-gesture" {
+            print("gesture started...")
+        }
+        if message.type == .Control && message.getText() == "stop-gesture" {
+            print("gesture stopped...")
+            presentRetryAlert()
+        }
+        if message.type == .Data {
+            if let data = message.getData() {
+                recordedData.append(data)
+            }
+        }
     }
 }
 

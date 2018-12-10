@@ -12,8 +12,6 @@
 		3A354ED32182196E0054DE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A354ED12182196E0054DE2C /* Main.storyboard */; };
 		3A354ED52182196F0054DE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A354ED42182196F0054DE2C /* Assets.xcassets */; };
 		3A354ED82182196F0054DE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A354ED62182196F0054DE2C /* LaunchScreen.storyboard */; };
-		3A354EE32182196F0054DE2C /* AirbenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354EE22182196F0054DE2C /* AirbenderTests.swift */; };
-		3A354EEE2182196F0054DE2C /* AirbenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354EED2182196F0054DE2C /* AirbenderUITests.swift */; };
 		3A354EF32182196F0054DE2C /* Airbender WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3A354EF22182196F0054DE2C /* Airbender WatchKit App.app */; };
 		3A354EF92182196F0054DE2C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A354EF72182196F0054DE2C /* Interface.storyboard */; };
 		3A354EFB2182196F0054DE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A354EFA2182196F0054DE2C /* Assets.xcassets */; };
@@ -21,10 +19,9 @@
 		3A354F072182196F0054DE2C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354F062182196F0054DE2C /* InterfaceController.swift */; };
 		3A354F092182196F0054DE2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354F082182196F0054DE2C /* ExtensionDelegate.swift */; };
 		3A354F0D218219700054DE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A354F0C218219700054DE2C /* Assets.xcassets */; };
-		3A3776172182302200FF685C /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3776162182302200FF685C /* MotionManager.swift */; };
-		3AF2FAC0218520C0007CFA4E /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2FABF218520C0007CFA4E /* WatchSessionManager.swift */; };
+		3AF2FAC0218520C0007CFA4E /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */; };
 		3AF2FAC121852839007CFA4E /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3776162182302200FF685C /* MotionManager.swift */; };
-		3AF2FAC2218528B6007CFA4E /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2FABF218520C0007CFA4E /* WatchSessionManager.swift */; };
+		3AF2FAC2218528B6007CFA4E /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */; };
 		3AF2FAC321852932007CFA4E /* RawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D462185125800E47C4C /* RawData.swift */; };
 		621B7D472185125800E47C4C /* RawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D462185125800E47C4C /* RawData.swift */; };
 		621B7D492185146500E47C4C /* LabeledRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D482185146500E47C4C /* LabeledRecording.swift */; };
@@ -33,6 +30,8 @@
 		62347BDB2185CD0F0025CAD1 /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62347BDA2185CD0F0025CAD1 /* Gesture.swift */; };
 		62347BE6218678B30025CAD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62347BE5218678B30025CAD1 /* HealthKit.framework */; };
 		62347BE8218678C00025CAD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62347BE7218678C00025CAD1 /* HealthKit.framework */; };
+		E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
+		E10D1ED921BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
 		E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A37219077C700A1CA0F /* FileWriter.swift */; };
 		E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A38219077C700A1CA0F /* CSVExporter.swift */; };
 /* End PBXBuildFile section */
@@ -102,11 +101,7 @@
 		3A354ED72182196F0054DE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A354ED92182196F0054DE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A354EDE2182196F0054DE2C /* AirbenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirbenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A354EE22182196F0054DE2C /* AirbenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbenderTests.swift; sourceTree = "<group>"; };
-		3A354EE42182196F0054DE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A354EE92182196F0054DE2C /* AirbenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirbenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A354EED2182196F0054DE2C /* AirbenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbenderUITests.swift; sourceTree = "<group>"; };
-		3A354EEF2182196F0054DE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A354EF22182196F0054DE2C /* Airbender WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airbender WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A354EF82182196F0054DE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		3A354EFA2182196F0054DE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,7 +112,7 @@
 		3A354F0C218219700054DE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A354F0E218219700054DE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A3776162182302200FF685C /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
-		3AF2FABF218520C0007CFA4E /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
 		621B7D462185125800E47C4C /* RawData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawData.swift; sourceTree = "<group>"; };
 		621B7D482185146500E47C4C /* LabeledRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledRecording.swift; sourceTree = "<group>"; };
 		621B7D4C218528E100E47C4C /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +122,7 @@
 		62347BE2218643680025CAD1 /* Airbender.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Airbender.entitlements; sourceTree = "<group>"; };
 		62347BE5218678B30025CAD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		62347BE7218678C00025CAD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		E10D1ED721BDE0BC006B1976 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E1DF4A37219077C700A1CA0F /* FileWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
 		E1DF4A38219077C700A1CA0F /* CSVExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVExporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,8 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				3A354ECC2182196E0054DE2C /* Airbender */,
-				3A354EE12182196F0054DE2C /* AirbenderTests */,
-				3A354EEC2182196F0054DE2C /* AirbenderUITests */,
 				3A354EF62182196F0054DE2C /* Airbender WatchKit App */,
 				3A354F052182196F0054DE2C /* Airbender WatchKit Extension */,
 				3A354ECB2182196E0054DE2C /* Products */,
@@ -196,7 +190,7 @@
 				62347BE2218643680025CAD1 /* Airbender.entitlements */,
 				E15F3EE921853D4E0095D30D /* Export */,
 				3AF2FABE21852078007CFA4E /* Shared */,
-				3A37761421822FF900FF685C /* Manager */,
+				3A37761421822FF900FF685C /* Data */,
 				3A37761521822FF900FF685C /* ViewController */,
 				3A354ECD2182196E0054DE2C /* AppDelegate.swift */,
 				3A354ED12182196E0054DE2C /* Main.storyboard */,
@@ -205,24 +199,6 @@
 				3A354ED92182196F0054DE2C /* Info.plist */,
 			);
 			path = Airbender;
-			sourceTree = "<group>";
-		};
-		3A354EE12182196F0054DE2C /* AirbenderTests */ = {
-			isa = PBXGroup;
-			children = (
-				3A354EE22182196F0054DE2C /* AirbenderTests.swift */,
-				3A354EE42182196F0054DE2C /* Info.plist */,
-			);
-			path = AirbenderTests;
-			sourceTree = "<group>";
-		};
-		3A354EEC2182196F0054DE2C /* AirbenderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3A354EED2182196F0054DE2C /* AirbenderUITests.swift */,
-				3A354EEF2182196F0054DE2C /* Info.plist */,
-			);
-			path = AirbenderUITests;
 			sourceTree = "<group>";
 		};
 		3A354EF62182196F0054DE2C /* Airbender WatchKit App */ = {
@@ -239,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				62347BDC218642980025CAD1 /* Airbender WatchKit Extension.entitlements */,
+				3A3776162182302200FF685C /* MotionManager.swift */,
 				3A354F062182196F0054DE2C /* InterfaceController.swift */,
 				3A354F082182196F0054DE2C /* ExtensionDelegate.swift */,
 				3A354F0C218219700054DE2C /* Assets.xcassets */,
@@ -247,15 +224,14 @@
 			path = "Airbender WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		3A37761421822FF900FF685C /* Manager */ = {
+		3A37761421822FF900FF685C /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3A3776162182302200FF685C /* MotionManager.swift */,
-				621B7D462185125800E47C4C /* RawData.swift */,
+				62347BDA2185CD0F0025CAD1 /* Gesture.swift */,
 				621B7D482185146500E47C4C /* LabeledRecording.swift */,
 				62347BD72185CCAC0025CAD1 /* GestureManager.swift */,
 			);
-			path = Manager;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		3A37761521822FF900FF685C /* ViewController */ = {
@@ -270,8 +246,9 @@
 		3AF2FABE21852078007CFA4E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				3AF2FABF218520C0007CFA4E /* WatchSessionManager.swift */,
-				62347BDA2185CD0F0025CAD1 /* Gesture.swift */,
+				621B7D462185125800E47C4C /* RawData.swift */,
+				3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */,
+				E10D1ED721BDE0BC006B1976 /* Message.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -503,12 +480,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */,
-				3AF2FAC0218520C0007CFA4E /* WatchSessionManager.swift in Sources */,
+				3AF2FAC0218520C0007CFA4E /* CommunicationManager.swift in Sources */,
 				621B7D4D218528E100E47C4C /* GestureViewController.swift in Sources */,
 				E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */,
 				621B7D472185125800E47C4C /* RawData.swift in Sources */,
 				3A354ED02182196E0054DE2C /* MainViewController.swift in Sources */,
-				3A3776172182302200FF685C /* MotionManager.swift in Sources */,
+				E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */,
 				3A354ECE2182196E0054DE2C /* AppDelegate.swift in Sources */,
 				62347BDB2185CD0F0025CAD1 /* Gesture.swift in Sources */,
 				62347BD82185CCAC0025CAD1 /* GestureManager.swift in Sources */,
@@ -520,7 +497,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A354EE32182196F0054DE2C /* AirbenderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +504,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A354EEE2182196F0054DE2C /* AirbenderUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +513,8 @@
 			files = (
 				3A354F092182196F0054DE2C /* ExtensionDelegate.swift in Sources */,
 				3AF2FAC121852839007CFA4E /* MotionManager.swift in Sources */,
-				3AF2FAC2218528B6007CFA4E /* WatchSessionManager.swift in Sources */,
+				3AF2FAC2218528B6007CFA4E /* CommunicationManager.swift in Sources */,
+				E10D1ED921BDE0BC006B1976 /* Message.swift in Sources */,
 				3A354F072182196F0054DE2C /* InterfaceController.swift in Sources */,
 				3AF2FAC321852932007CFA4E /* RawData.swift in Sources */,
 			);

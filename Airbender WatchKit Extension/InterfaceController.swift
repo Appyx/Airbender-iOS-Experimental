@@ -11,99 +11,122 @@ import Foundation
 import CoreMotion
 import HealthKit
 
-class InterfaceController: WKInterfaceController,HKWorkoutSessionDelegate {
-    
+class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
+
     let motionManager = MotionManager()
-    let connectivityManager = WatchSessionManager.shared
-    var workoutSession:HKWorkoutSession?=nil
-    let healthStore=HKHealthStore()
-    var workItem: DispatchWorkItem?
-    
+    let commSession = CommunicationManager.shared
+    var workoutSession: HKWorkoutSession? = nil
+    let healthStore = HKHealthStore()
+    @IBOutlet weak var buttonBackground: WKInterfaceGroup!
+    var isRecording = false
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        connectivityManager.delegate=self
-        let configuration = HKWorkoutConfiguration()
-        configuration.activityType = .other
-        configuration.locationType = .indoor
-        workoutSession = try? HKWorkoutSession(healthStore: healthStore,configuration: configuration)
-        if let session=workoutSession {
-            session.delegate = self
-        }
+        commSession.delegate = self
     }
-    
+
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         motionManager.delegate = self
-        connectivityManager.startSession()
-        print(connectivityManager.session?.isReachable)
-        
-        
-        //        workItem?.cancel()
+        commSession.startSession()
     }
-    
+
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
-        
-        //        workItem = DispatchWorkItem {
-        //            self.workoutSession!.end()
-        //            self.workoutSession!.stopActivity(with: Date())
-        //            self.motionManager.stopMotionUpdates()
-        //        }
-        //
-        //        DispatchQueue.main.asyncAfter(deadline: .now()+3, execute: workItem!)
     }
-    
+
     func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState, from fromState: HKWorkoutSessionState, date: Date) {
-        
+
     }
-    
+
     func workoutSession(_ workoutSession: HKWorkoutSession, didFailWithError error: Error) {
-        
+
     }
+
+    func createWorkoutSession() {
+        let configuration = HKWorkoutConfiguration()
+        configuration.activityType = .other
+        configuration.locationType = .indoor
+        workoutSession = try? HKWorkoutSession(healthStore: healthStore, configuration: configuration)
+        workoutSession?.delegate = self
+    }
+
+    func startWorkout() {
+        createWorkoutSession()
+        workoutSession?.prepare()
+        workoutSession?.startActivity(with: Date())
+        buttonBackground.setBackgroundColor(UIColor.red)
+    }
+
+    func stopWorkout() {
+        workoutSession?.stopActivity(with: Date())
+        workoutSession?.end()
+        buttonBackground.setBackgroundColor(UIColor.green)
+    }
+
+    func startGesture() {
+        startWorkout()
+        sendStart()
+    }
+
+    func stopGesture() {
+        stopWorkout()
+        sendStop()
+    }
+
+    func sendStart() {
+        let msg = Message(type: MessageType.Control).with(text: "start-gesture")
+        commSession.send(message: msg)
+    }
+
+    func sendStop() {
+        let msg = Message(type: MessageType.Control).with(text: "stop-gesture")
+        commSession.send(message: msg)
+    }
+
+    @IBAction func buttonPressed() {
+        isRecording = !isRecording
+        if isRecording { //recording started
+            startGesture()
+        } else {
+            stopGesture()
+        }
+    }
+    func sendData(data: RawData) {
+        let msg = Message(type: MessageType.Data).with(data: data)
+        commSession.send(message: msg)
+    }
+
 }
 
 extension InterfaceController: MotionManagerDelegate {
     func motionManager(_ manager: MotionManager, didUpdateMotionData data: CMDeviceMotion) {
-        
-        let rawData = RawData(timestamp: Int64((data.timestamp*1000.0).rounded()),
+        let rawData = RawData(timestamp: Int64((data.timestamp * 1000.0).rounded()),
                               accX: data.userAcceleration.x,
                               accY: data.userAcceleration.y,
                               accZ: data.userAcceleration.z,
                               gyroX: data.rotationRate.x,
                               gyroY: data.rotationRate.y,
                               gyroZ: data.rotationRate.z)
-        print(rawData.timestamp)
-        connectivityManager.sendMessage(message: rawData.toDictionary())
+        sendData(data: rawData)
     }
 }
 
-extension InterfaceController: WatchSessionManagerDelegate {
-    func managerDidReceiveMessage(message: [String : Any]) {
-        if let msg = message["control"] as? String, msg == "stop" {
-            self.workoutSession!.end()
-            self.workoutSession!.stopActivity(with: Date())
-            self.motionManager.stopMotionUpdates()
-        } else if let msg = message["control"] as? String, msg == "start" {
-           
-            motionManager.startMotionUpdates()
-            workoutSession!.startActivity(with: Date())
+extension InterfaceController: CommunicationManagerDelegate {
+    func managerDidReceiveMessage(message: Message) {
+        if message.type == .Control && message.getText() == "start-recording" {
+            print("recording started")
+        }
+        if message.type == .Control && message.getText() == "stop-recording" {
+            print("recording stopped")
+            stopWorkout()
         }
     }
-    
-    
 }
 
-extension Date {
-    var secondsSince1970:Int64 {
-        return Int64((self.timeIntervalSince1970*1.0).rounded())
-    }
-    
-    init(seconds:Int64) {
-        self = Date(timeIntervalSince1970: TimeInterval(seconds))
-    }
-}
+
 
 
 

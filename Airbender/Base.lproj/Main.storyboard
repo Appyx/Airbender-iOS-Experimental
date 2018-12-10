@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AOQ-0Z-0gg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AOQ-0Z-0gg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,20 +32,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWE-0c-eQS">
-                                <rect key="frame" x="20" y="567" width="335" height="80"/>
-                                <color key="backgroundColor" red="0.72281566259999996" green="0.93074701029999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="tW1-9j-VBl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Start Gesture">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="StartStopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u95-UG-GfB"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesture Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7O-Cw-NNq">
                                 <rect key="frame" x="20" y="40" width="335" height="31.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -59,23 +45,20 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="cancelRecordingPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ita-hu-Ugv"/>
+                                    <action selector="cancelRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tcm-38-2qC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="t7O-Cw-NNq" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="20" id="3HQ-4i-ciK"/>
-                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="bottom" secondItem="eWE-0c-eQS" secondAttribute="bottom" constant="20" id="5P6-2D-jGr"/>
                             <constraint firstItem="jN6-fP-ZTu" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="20" id="8Ao-rj-mYN"/>
                             <constraint firstItem="Nnd-0T-Ix8" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="8" id="9zd-uU-gpS"/>
                             <constraint firstItem="E3s-bs-aCA" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="20" id="Chs-BF-4Q8"/>
-                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="eWE-0c-eQS" secondAttribute="trailing" constant="20" id="IzJ-Lb-m95"/>
                             <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="E3s-bs-aCA" secondAttribute="trailing" constant="20" id="Pdl-13-rxv"/>
                             <constraint firstItem="jN6-fP-ZTu" firstAttribute="top" secondItem="E3s-bs-aCA" secondAttribute="bottom" constant="20" id="Ra4-Ul-MJw"/>
                             <constraint firstItem="E3s-bs-aCA" firstAttribute="top" secondItem="t7O-Cw-NNq" secondAttribute="bottom" constant="20" id="SmA-pj-bi4"/>
                             <constraint firstItem="Nnd-0T-Ix8" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="8" id="WXD-cw-Hfs"/>
-                            <constraint firstItem="eWE-0c-eQS" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="20" id="jlU-0d-1J4"/>
                             <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="jN6-fP-ZTu" secondAttribute="trailing" constant="20" id="rTW-yA-Wr7"/>
                             <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="t7O-Cw-NNq" secondAttribute="trailing" constant="20" id="rp1-WU-TOy"/>
                             <constraint firstItem="t7O-Cw-NNq" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="20" id="wMM-aP-QWt"/>
@@ -86,7 +69,6 @@
                         <outlet property="gestureDescriptionLabel" destination="jN6-fP-ZTu" id="Bbq-Mh-z0X"/>
                         <outlet property="gestureImageView" destination="E3s-bs-aCA" id="mPU-yp-MR6"/>
                         <outlet property="gestureNameLabel" destination="t7O-Cw-NNq" id="uyG-sP-JQJ"/>
-                        <outlet property="startStopButton" destination="eWE-0c-eQS" id="N4I-0P-0gA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
