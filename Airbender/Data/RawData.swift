@@ -15,18 +15,18 @@ class RawData {
     let accY: Double
     let accZ: Double
     
-    let gyroX: Double
-    let gyroY: Double
-    let gyroZ: Double
+    let gyrX: Double
+    let gyrY: Double
+    let gyrZ: Double
     
     init(timestamp: Int64, accX: Double, accY: Double, accZ: Double, gyroX: Double, gyroY: Double, gyroZ: Double) {
         self.timestamp = timestamp
         self.accX = accX
         self.accY = accY
         self.accZ = accZ
-        self.gyroX = gyroX
-        self.gyroY = gyroY
-        self.gyroZ = gyroZ
+        self.gyrX = gyroX
+        self.gyrY = gyroY
+        self.gyrZ = gyroZ
     }
     
     init(copy: RawData) {
@@ -34,9 +34,9 @@ class RawData {
         self.accX = copy.accX
         self.accY = copy.accY
         self.accZ = copy.accZ
-        self.gyroX = copy.gyroX
-        self.gyroY = copy.gyroY
-        self.gyroZ = copy.gyroZ
+        self.gyrX = copy.gyrX
+        self.gyrY = copy.gyrY
+        self.gyrZ = copy.gyrZ
     }
     
     init(dict:[String: Any]) {
@@ -44,9 +44,9 @@ class RawData {
         self.accX = dict["accX"] as! Double
         self.accY = dict["accY"] as! Double
         self.accZ = dict["accZ"] as! Double
-        self.gyroX = dict["gyroX"] as! Double
-        self.gyroY = dict["gyroY"] as! Double
-        self.gyroZ = dict["gyroZ"] as! Double
+        self.gyrX = dict["gyroX"] as! Double
+        self.gyrY = dict["gyroY"] as! Double
+        self.gyrZ = dict["gyroZ"] as! Double
     }
     
     public func toDictionary() -> [String: Any] {
@@ -54,26 +54,8 @@ class RawData {
                 "accX": accX,
                 "accY": accY,
                 "accZ": accZ,
-                "gyroX": gyroX,
-                "gyroY": gyroY,
-                "gyroZ": gyroZ]
-    }
-    
-    // MARK: CSV
-    class var CSV_HEADER: String {
-       return "timestamp,accX,accY,accZ,gyroX,gyroY,gyroZ"
-    }
-    
-    var csvString: String {
-        return "\(timestamp),\(accX),\(accY),\(accZ),\(gyroX),\(gyroY),\(gyroZ)"
+                "gyroX": gyrX,
+                "gyroY": gyrY,
+                "gyroZ": gyrZ]
     }
 }
-
-//extension Encodable {
-//    subscript(key: String) -> Any? {
-//        return dictionary[key]
-//    }
-//    var dictionary: [String: Any] {
-//        return (try? JSONSerialization.jsonObject(with: JSONEncoder().encode(self))) as? [String: Any] ?? [:]
-//    }
-//}

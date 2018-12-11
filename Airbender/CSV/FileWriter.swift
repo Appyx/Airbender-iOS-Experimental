@@ -10,10 +10,12 @@ import Foundation
 
 class FileWriter {
     private let manager = FileManager.default
-    var dir: URL
-    var file: URL?
+    private var dir: URL
+    private var file: URL?
+    private let appending:Bool
 
-    init(directory: URL? = nil) {
+    init(appending:Bool=true,directory: URL? = nil) {
+        self.appending=appending
         if let directory = directory {
             self.dir = directory
         } else {
@@ -29,7 +31,7 @@ class FileWriter {
     private func createFile(filename: String) {
         file = dir.appendingPathComponent("\(filename)")
 
-        if manager.fileExists(atPath: file!.path) {
+        if manager.fileExists(atPath: file!.path) && appending{
             print("appending to file: \(filename)")
         } else {
             print("creating file: \(filename)")
@@ -37,21 +39,20 @@ class FileWriter {
         }
     }
 
-    func writeLines(lines: [String]) -> Bool {
-        guard let file = file else {return false}
-        guard let handle = try? FileHandle(forWritingTo: file) else { return false }
-        guard manager.fileExists(atPath: file.path) else { return false }
-
+    func writeLines(lines: [String]) throws {
+        guard let file = file else {throw FileWriterError.fileNotFound}
+        guard let handle = try? FileHandle(forWritingTo: file) else {throw FileWriterError.fileNotFound}
+        guard manager.fileExists(atPath: file.path) else {throw FileWriterError.fileNotFound}
+        
         handle.seekToEndOfFile()
         for line in lines {
             let str = "\(line)\n"
             handle.write(Data(str.utf8))
         }
         handle.closeFile()
-        return true
     }
+}
 
-    func writeLine(line: String) -> Bool {
-        return writeLines(lines: [line])
-    }
+enum FileWriterError:Error{
+    case fileNotFound
 }

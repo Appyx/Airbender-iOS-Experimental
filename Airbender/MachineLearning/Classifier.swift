@@ -9,7 +9,7 @@
 import Foundation
 import CoreML
 
-class MLClassifier {
+class Classifier {
 //    let model = GestureDetector()
     private let featureData: [[Double]]
     

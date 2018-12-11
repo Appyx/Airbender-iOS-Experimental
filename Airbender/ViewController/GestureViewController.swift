@@ -37,6 +37,7 @@ class GestureViewController: UIViewController {
             gestureDescriptionLabel.text = actualGesture.description
         } else {
             dismiss(animated: true, completion: nil)
+            engine.export()
         }
     }
 

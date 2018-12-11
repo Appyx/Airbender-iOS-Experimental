@@ -9,30 +9,43 @@
 import Foundation
 
 class RecordingEngine {
-    let commManager = CommunicationManager.shared
-    var recordedData = [RawData]()
+    private let commManager = CommunicationManager.shared
+    private var recordedData = [RawData]()
+    private let frame = Dataframe()
 
     init() {
         commManager.delegate = self
         commManager.startSession()
     }
-    
+
     func clear() {
         recordedData.removeAll()
     }
-    
-    func startRecording(){
+
+    func startRecording() {
         commManager.send(message: Message(type: .Control).with(text: "start-recording"))
     }
-    
-    func stopRecording(){
+
+    func stopRecording() {
         commManager.send(message: Message(type: .Control).with(text: "stop-recording"))
     }
-    
-    func save(participant:String,gesture:Int){
-        let data = Sample(user: participant, gesture: gesture, rawData: recordedData)
-        let exporter=CSVExporter()
-        print("exported: \(exporter.export(recording: data))")
+
+    func export() {
+        let exporter = CSVExporter()
+        do {
+            try exporter.exportCSVs(frame: frame)
+        } catch {
+            print(error)
+        }
+    }
+
+    func save(participant: String, gesture: Int) {
+        frame.accX.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.accX }))
+        frame.accY.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.accY }))
+        frame.accZ.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.accZ }))
+        frame.gyrX.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.gyrX }))
+        frame.gyrY.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.gyrY }))
+        frame.gyrZ.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.gyrZ }))
     }
 }
 

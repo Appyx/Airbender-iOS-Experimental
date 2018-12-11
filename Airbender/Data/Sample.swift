@@ -10,13 +10,26 @@ import Foundation
 
 class Sample{
     var user: String
-    var name: Int
-    var data: [RawData]
-    
-    init(user: String, gesture: Int, rawData: [RawData]) {
-        self.user = user
-        self.name = gesture
-        self.data = rawData
+    var gesture: Int
+    var features: [Double]
+    var csvString:String{
+        let featureString=features.map{String($0)}.joined(separator: ";")
+        return "\(user);\(gesture);\(featureString)"
     }
     
+    init(user:String,gesture:Int,features:[Double]) {
+        self.user=user
+        self.gesture=gesture
+        self.features=features
+    }
+    
+    init(csvString:String) {
+        var components=csvString.split(separator: ";").map{String($0)}
+        user=components.remove(at: 0)
+        gesture=Int(components.remove(at: 0))!
+        features=components.map{Double($0)!}
+    }
+    
+    
+  
 }

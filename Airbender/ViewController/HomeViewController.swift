@@ -12,18 +12,28 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var gestureNameLabel: UILabel!
     @IBOutlet weak var gestureImageView: UIImageView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
+        let importer = CSVImporter()
+        let df = try! importer.importCSVs()
+        let proc = PreProcessor(frame: df)
+        proc.dropEmptySamples()
+        proc.resample(toSize: 100)
+        let df2=proc.frame
+        let exporter = CSVExporter(appending: false)
+        try! exporter.exportCSVs(frame: df2)
+
         // Do any additional setup after loading the view.
     }
-    
+
     // MARK: - Actions
     @IBAction func unwindToHome(sender: UIStoryboardSegue) {
         // used for dissmissing info view controller
     }
-    
+
     /*
     // MARK: - Navigation
 
