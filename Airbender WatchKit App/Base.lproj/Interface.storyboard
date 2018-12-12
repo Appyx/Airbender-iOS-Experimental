@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Rvb-zO-JBR">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,10 +8,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Control-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Airbender_WatchKit_App" customModuleProvider="target">
+                <controller identifier="Control" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Airbender_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="1" alignment="center" layout="vertical" id="ZkG-dP-hc4">
                             <items>
@@ -36,6 +36,41 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="144" y="347"/>
+        </scene>
+        <!--Airbender-->
+        <scene sceneID="6Qb-cc-8de">
+            <objects>
+                <controller identifier="Airbender" id="Rvb-zO-JBR" customClass="DevicesInterfaceController" customModule="Airbender_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="5Cq-jQ-Krc">
+                            <items>
+                                <tableRow identifier="DeviceRow" id="1m9-du-fUb" customClass="DeviceRowController" customModule="Airbender_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="30" alignment="left" spacing="6" id="KHN-ux-HNd">
+                                        <items>
+                                            <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="8lc-h1-cFN">
+                                                <color key="color" red="0.85490196080000003" green="0.25490196079999999" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </separator>
+                                            <group alignment="left" verticalAlignment="center" layout="vertical" spacing="0.0" id="bOd-qL-rRV">
+                                                <items>
+                                                    <label alignment="left" text="Television" id="UTK-cg-mOD"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="deviceLabel" destination="UTK-cg-mOD" id="i38-Cm-36G"/>
+                                        <outlet property="seperator" destination="8lc-h1-cFN" id="gL1-0Q-jfA"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="devicesTable" destination="5Cq-jQ-Krc" id="nHM-jE-7Bj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="489" y="347"/>
         </scene>
     </scenes>
 </document>
