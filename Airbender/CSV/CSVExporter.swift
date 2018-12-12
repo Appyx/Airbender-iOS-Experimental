@@ -25,12 +25,12 @@ class CSVExporter {
         gyrZWriter = FileWriter(appending: appending).using(file: "gyr_z.csv")
     }
 
-    func exportCSVs(frame: Dataframe) throws {
-        try accXWriter.writeLines(lines: frame.accX.map { $0.csvString })
-        try accYWriter.writeLines(lines: frame.accY.map { $0.csvString })
-        try accZWriter.writeLines(lines: frame.accZ.map { $0.csvString })
-        try gyrXWriter.writeLines(lines: frame.gyrX.map { $0.csvString })
-        try gyrYWriter.writeLines(lines: frame.gyrY.map { $0.csvString })
-        try gyrZWriter.writeLines(lines: frame.gyrZ.map { $0.csvString })
+    func exportCSVs(frame: DataFrame) throws {
+        try accXWriter.writeLines(lines: frame.accX.samples.map { $0.csvString })
+        try accYWriter.writeLines(lines: frame.accY.samples.map { $0.csvString })
+        try accZWriter.writeLines(lines: frame.accZ.samples.map { $0.csvString })
+        try gyrXWriter.writeLines(lines: frame.gyrX.samples.map { $0.csvString })
+        try gyrYWriter.writeLines(lines: frame.gyrY.samples.map { $0.csvString })
+        try gyrZWriter.writeLines(lines: frame.gyrZ.samples.map { $0.csvString })
     }
 }

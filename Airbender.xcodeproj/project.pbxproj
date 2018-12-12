@@ -33,7 +33,7 @@
 		62347BD82185CCAC0025CAD1 /* GesturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62347BD72185CCAC0025CAD1 /* GesturePresenter.swift */; };
 		62347BE6218678B30025CAD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62347BE5218678B30025CAD1 /* HealthKit.framework */; };
 		62347BE8218678C00025CAD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62347BE7218678C00025CAD1 /* HealthKit.framework */; };
-		62EB69C421BEC77300383BB9 /* PreProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69C221BEC77300383BB9 /* PreProcessor.swift */; };
+		62EB69C421BEC77300383BB9 /* Preprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69C221BEC77300383BB9 /* Preprocessor.swift */; };
 		62EB69C521BEC77300383BB9 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69C321BEC77300383BB9 /* Classifier.swift */; };
 		62EB69C721BED44B00383BB9 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D482185146500E47C4C /* Sample.swift */; };
 		62EB69CB21BED52B00383BB9 /* CSVImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69CA21BED52B00383BB9 /* CSVImporter.swift */; };
@@ -48,9 +48,8 @@
 		E126296B21BF277E009D3D21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF221BF0D910048C5EC /* HomeViewController.swift */; };
 		E126296C21BF2783009D3D21 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF421BF10AF0048C5EC /* HistoryTableViewController.swift */; };
 		E126296E21C043EF009D3D21 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126296D21C043EF009D3D21 /* FileReader.swift */; };
-		E126297221C055F8009D3D21 /* Dataframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297121C055F8009D3D21 /* Dataframe.swift */; };
-		E126297621C0805F009D3D21 /* FeatureExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297521C0805F009D3D21 /* FeatureExtractor.swift */; };
-		E126297821C157DC009D3D21 /* FIxedDataframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297721C157DC009D3D21 /* FIxedDataframe.swift */; };
+		E126297221C055F8009D3D21 /* DataFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297121C055F8009D3D21 /* DataFrame.swift */; };
+		E126297A21C19E01009D3D21 /* SampleFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297921C19E01009D3D21 /* SampleFrame.swift */; };
 		E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A37219077C700A1CA0F /* FileWriter.swift */; };
 		E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A38219077C700A1CA0F /* CSVExporter.swift */; };
 		FAD242F9E43D7679DF3EA8D6 /* Pods_Airbender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0A2B56C9F61179C4F250C1 /* Pods_Airbender.framework */; };
@@ -157,7 +156,7 @@
 		62347BE2218643680025CAD1 /* Airbender.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Airbender.entitlements; sourceTree = "<group>"; };
 		62347BE5218678B30025CAD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		62347BE7218678C00025CAD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		62EB69C221BEC77300383BB9 /* PreProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreProcessor.swift; sourceTree = "<group>"; };
+		62EB69C221BEC77300383BB9 /* Preprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preprocessor.swift; sourceTree = "<group>"; };
 		62EB69C321BEC77300383BB9 /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		62EB69CA21BED52B00383BB9 /* CSVImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVImporter.swift; sourceTree = "<group>"; };
 		62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingEngine.swift; sourceTree = "<group>"; };
@@ -166,9 +165,8 @@
 		E10D1ED721BDE0BC006B1976 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingEngine.swift; sourceTree = "<group>"; };
 		E126296D21C043EF009D3D21 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
-		E126297121C055F8009D3D21 /* Dataframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataframe.swift; sourceTree = "<group>"; };
-		E126297521C0805F009D3D21 /* FeatureExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureExtractor.swift; sourceTree = "<group>"; };
-		E126297721C157DC009D3D21 /* FIxedDataframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIxedDataframe.swift; sourceTree = "<group>"; };
+		E126297121C055F8009D3D21 /* DataFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFrame.swift; sourceTree = "<group>"; };
+		E126297921C19E01009D3D21 /* SampleFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFrame.swift; sourceTree = "<group>"; };
 		E1DF4A37219077C700A1CA0F /* FileWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
 		E1DF4A38219077C700A1CA0F /* CSVExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVExporter.swift; sourceTree = "<group>"; };
 		E6F6CC0BD652703DCEC80ED6 /* Pods-Airbender WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit App/Pods-Airbender WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
@@ -344,9 +342,8 @@
 		62EB69C121BEC77300383BB9 /* MachineLearning */ = {
 			isa = PBXGroup;
 			children = (
-				62EB69C221BEC77300383BB9 /* PreProcessor.swift */,
+				62EB69C221BEC77300383BB9 /* Preprocessor.swift */,
 				62EB69C321BEC77300383BB9 /* Classifier.swift */,
-				E126297521C0805F009D3D21 /* FeatureExtractor.swift */,
 			);
 			path = MachineLearning;
 			sourceTree = "<group>";
@@ -356,8 +353,8 @@
 			children = (
 				621B7D462185125800E47C4C /* RawData.swift */,
 				621B7D482185146500E47C4C /* Sample.swift */,
-				E126297121C055F8009D3D21 /* Dataframe.swift */,
-				E126297721C157DC009D3D21 /* FIxedDataframe.swift */,
+				E126297121C055F8009D3D21 /* DataFrame.swift */,
+				E126297921C19E01009D3D21 /* SampleFrame.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -759,10 +756,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AEDABF821BF13350048C5EC /* HistoryTableViewCell.swift in Sources */,
-				E126297221C055F8009D3D21 /* Dataframe.swift in Sources */,
+				E126297221C055F8009D3D21 /* DataFrame.swift in Sources */,
 				E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */,
 				E126296B21BF277E009D3D21 /* HomeViewController.swift in Sources */,
 				62EB69C521BEC77300383BB9 /* Classifier.swift in Sources */,
+				E126297A21C19E01009D3D21 /* SampleFrame.swift in Sources */,
 				E126296C21BF2783009D3D21 /* HistoryTableViewController.swift in Sources */,
 				62EB69CB21BED52B00383BB9 /* CSVImporter.swift in Sources */,
 				3AF2FAC0218520C0007CFA4E /* CommunicationManager.swift in Sources */,
@@ -772,16 +770,14 @@
 				E10D1EDE21BF0E05006B1976 /* ProcessingEngine.swift in Sources */,
 				E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */,
 				3AEDABFB21BF19BB0048C5EC /* Gesture.swift in Sources */,
-				E126297621C0805F009D3D21 /* FeatureExtractor.swift in Sources */,
 				621B7D472185125800E47C4C /* RawData.swift in Sources */,
 				3A354ED02182196E0054DE2C /* MainViewController.swift in Sources */,
 				E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */,
 				3A354ECE2182196E0054DE2C /* AppDelegate.swift in Sources */,
 				62EB69CE21BED5FC00383BB9 /* RecordingEngine.swift in Sources */,
-				E126297821C157DC009D3D21 /* FIxedDataframe.swift in Sources */,
 				62347BD82185CCAC0025CAD1 /* GesturePresenter.swift in Sources */,
 				621B7D492185146500E47C4C /* Sample.swift in Sources */,
-				62EB69C421BEC77300383BB9 /* PreProcessor.swift in Sources */,
+				62EB69C421BEC77300383BB9 /* Preprocessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

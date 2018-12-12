@@ -11,7 +11,7 @@ import Foundation
 class RecordingEngine {
     private let commManager = CommunicationManager.shared
     private var recordedData = [RawData]()
-    private let frame = Dataframe()
+    private let frame = DataFrame()
 
     init() {
         commManager.delegate = self
@@ -41,7 +41,7 @@ class RecordingEngine {
 
     func save(participant: String, gesture: Int) {
         let factors=Sample.Factors(user:participant,gesture:gesture)
-        frame.addRow(factors: factors, rawData: recordedData)
+        frame.addSamples(factors: factors, rawData: recordedData)
     }
 }
 

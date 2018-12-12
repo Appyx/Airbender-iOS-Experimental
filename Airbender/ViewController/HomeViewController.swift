@@ -16,15 +16,16 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-        let importer = CSVImporter()
-        let df = try! importer.importCSVs()
-        let proc = PreProcessor(frame: df)
-        proc.dropEmptySamples()
-        proc.resample(toSize: 100)
-        let df2=proc.frame
-        let exporter = CSVExporter(appending: false)
-        try! exporter.exportCSVs(frame: df2)
+        //let importer = CSVImporter()
+        //let df = try! importer.importCSVs()
+        //let proc = try! Preprocessor(frame: df)
+        //proc.dropEmptySamples()
+        //try! proc.resample(toSize: 100)
+        
+        
+        //let df2=proc.raw
+        //let exporter = CSVExporter(appending: false)
+        //try! exporter.exportCSVs(frame: df2)
 
         // Do any additional setup after loading the view.
     }

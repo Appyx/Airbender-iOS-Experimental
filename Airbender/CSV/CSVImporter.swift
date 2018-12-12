@@ -16,14 +16,14 @@ class CSVImporter {
     private let gyrYReader = FileReader().using(file: "gyr_y.csv")
     private let gyrZReader = FileReader().using(file: "gyr_z.csv")
 
-    func importCSVs() throws ->Dataframe {
-        let frame=Dataframe()
-        frame.accX=try accXReader.readLines().map { s in Sample(csvString: s) }
-        frame.accY=try accYReader.readLines().map { s in Sample(csvString: s) }
-        frame.accZ=try accZReader.readLines().map { s in Sample(csvString: s) }
-        frame.gyrX=try gyrXReader.readLines().map { s in Sample(csvString: s) }
-        frame.gyrY=try gyrYReader.readLines().map { s in Sample(csvString: s) }
-        frame.gyrZ=try gyrZReader.readLines().map { s in Sample(csvString: s) }
+    func importCSVs() throws -> DataFrame {
+        let frame = DataFrame()
+        frame.accX.samples = try accXReader.readLines().map { s in Sample(csvString: s) }
+        frame.accY.samples = try accYReader.readLines().map { s in Sample(csvString: s) }
+        frame.accZ.samples = try accZReader.readLines().map { s in Sample(csvString: s) }
+        frame.gyrX.samples = try gyrXReader.readLines().map { s in Sample(csvString: s) }
+        frame.gyrY.samples = try gyrYReader.readLines().map { s in Sample(csvString: s) }
+        frame.gyrZ.samples = try gyrZReader.readLines().map { s in Sample(csvString: s) }
         return frame
     }
 }
