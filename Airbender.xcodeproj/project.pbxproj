@@ -1,1259 +1,1263 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 50;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		1D5158B97D59FBE06BBB29EF /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		3A354ECE2182196E0054DE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354ECD2182196E0054DE2C /* AppDelegate.swift */; };
-		3A354ED02182196E0054DE2C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354ECF2182196E0054DE2C /* MainViewController.swift */; };
-		3A354ED32182196E0054DE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A354ED12182196E0054DE2C /* Main.storyboard */; };
-		3A354ED52182196F0054DE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A354ED42182196F0054DE2C /* Assets.xcassets */; };
-		3A354ED82182196F0054DE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A354ED62182196F0054DE2C /* LaunchScreen.storyboard */; };
-		3A354EF32182196F0054DE2C /* Airbender WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3A354EF22182196F0054DE2C /* Airbender WatchKit App.app */; };
-		3A354EF92182196F0054DE2C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A354EF72182196F0054DE2C /* Interface.storyboard */; };
-		3A354EFB2182196F0054DE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A354EFA2182196F0054DE2C /* Assets.xcassets */; };
-		3A354F022182196F0054DE2C /* Airbender WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A354F012182196F0054DE2C /* Airbender WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3A354F072182196F0054DE2C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354F062182196F0054DE2C /* InterfaceController.swift */; };
-		3A354F092182196F0054DE2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354F082182196F0054DE2C /* ExtensionDelegate.swift */; };
-		3A354F0D218219700054DE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A354F0C218219700054DE2C /* Assets.xcassets */; };
-		3AEDABF121BF0D7E0048C5EC /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF021BF0D7E0048C5EC /* InfoViewController.swift */; };
-		3AEDABF821BF13350048C5EC /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF721BF13350048C5EC /* HistoryTableViewCell.swift */; };
-		3AEDABFB21BF19BB0048C5EC /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABFA21BF19BB0048C5EC /* Gesture.swift */; };
-		3AF2FAC0218520C0007CFA4E /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */; };
-		3AF2FAC121852839007CFA4E /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3776162182302200FF685C /* MotionManager.swift */; };
-		3AF2FAC2218528B6007CFA4E /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */; };
-		3AF2FAC321852932007CFA4E /* RawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D462185125800E47C4C /* RawData.swift */; };
-		621B7D472185125800E47C4C /* RawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D462185125800E47C4C /* RawData.swift */; };
-		621B7D492185146500E47C4C /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D482185146500E47C4C /* Sample.swift */; };
-		621B7D4D218528E100E47C4C /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D4C218528E100E47C4C /* GestureViewController.swift */; };
-		62347BD82185CCAC0025CAD1 /* GesturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62347BD72185CCAC0025CAD1 /* GesturePresenter.swift */; };
-		62347BE6218678B30025CAD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62347BE5218678B30025CAD1 /* HealthKit.framework */; };
-		62347BE8218678C00025CAD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62347BE7218678C00025CAD1 /* HealthKit.framework */; };
-		62EB69C421BEC77300383BB9 /* Preprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69C221BEC77300383BB9 /* Preprocessor.swift */; };
-		62EB69C521BEC77300383BB9 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69C321BEC77300383BB9 /* Classifier.swift */; };
-		62EB69C721BED44B00383BB9 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D482185146500E47C4C /* Sample.swift */; };
-		62EB69CB21BED52B00383BB9 /* CSVImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69CA21BED52B00383BB9 /* CSVImporter.swift */; };
-		62EB69CE21BED5FC00383BB9 /* RecordingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */; };
-		84C0CFEA722B189F72B49ED5 /* Pods_Airbender_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02265D78E071369E5EB2FB3F /* Pods_Airbender_WatchKit_Extension.framework */; };
-		9419755D4D3DBCEE07935B65 /* Pods_AirbenderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DB905CF646D8ECC5439FCE /* Pods_AirbenderTests.framework */; };
-		97969573295719E697BA8427 /* Pods_Airbender_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10AB72C7B29E71867D694089 /* Pods_Airbender_WatchKit_App.framework */; };
-		AF4A15AF12DAB5F00928468E /* Pods_AirbenderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717A1241B6B5E67E0B6852BA /* Pods_AirbenderUITests.framework */; };
-		E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
-		E10D1ED921BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
-		E10D1EDE21BF0E05006B1976 /* ProcessingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */; };
-		E126296B21BF277E009D3D21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF221BF0D910048C5EC /* HomeViewController.swift */; };
-		E126296C21BF2783009D3D21 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF421BF10AF0048C5EC /* HistoryTableViewController.swift */; };
-		E126296E21C043EF009D3D21 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126296D21C043EF009D3D21 /* FileReader.swift */; };
-		E126297221C055F8009D3D21 /* DataFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297121C055F8009D3D21 /* DataFrame.swift */; };
-		E126297A21C19E01009D3D21 /* SampleFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297921C19E01009D3D21 /* SampleFrame.swift */; };
-		E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A37219077C700A1CA0F /* FileWriter.swift */; };
-		E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A38219077C700A1CA0F /* CSVExporter.swift */; };
-		FAD242F9E43D7679DF3EA8D6 /* Pods_Airbender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0A2B56C9F61179C4F250C1 /* Pods_Airbender.framework */; };
+        1D5158B97D59FBE06BBB29EF /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+        3A354ECE2182196E0054DE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354ECD2182196E0054DE2C /* AppDelegate.swift */; };
+        3A354ED02182196E0054DE2C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354ECF2182196E0054DE2C /* MainViewController.swift */; };
+        3A354ED32182196E0054DE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A354ED12182196E0054DE2C /* Main.storyboard */; };
+        3A354ED52182196F0054DE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A354ED42182196F0054DE2C /* Assets.xcassets */; };
+        3A354ED82182196F0054DE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A354ED62182196F0054DE2C /* LaunchScreen.storyboard */; };
+        3A354EF32182196F0054DE2C /* Airbender WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3A354EF22182196F0054DE2C /* Airbender WatchKit App.app */; };
+        3A354EF92182196F0054DE2C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A354EF72182196F0054DE2C /* Interface.storyboard */; };
+        3A354EFB2182196F0054DE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A354EFA2182196F0054DE2C /* Assets.xcassets */; };
+        3A354F022182196F0054DE2C /* Airbender WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A354F012182196F0054DE2C /* Airbender WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+        3A354F072182196F0054DE2C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354F062182196F0054DE2C /* InterfaceController.swift */; };
+        3A354F092182196F0054DE2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A354F082182196F0054DE2C /* ExtensionDelegate.swift */; };
+        3A354F0D218219700054DE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A354F0C218219700054DE2C /* Assets.xcassets */; };
+        3AEDABF121BF0D7E0048C5EC /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF021BF0D7E0048C5EC /* InfoViewController.swift */; };
+        3AEDABF821BF13350048C5EC /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF721BF13350048C5EC /* HistoryTableViewCell.swift */; };
+        3AEDABFB21BF19BB0048C5EC /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABFA21BF19BB0048C5EC /* Gesture.swift */; };
+        3AF2FAC0218520C0007CFA4E /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */; };
+        3AF2FAC121852839007CFA4E /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3776162182302200FF685C /* MotionManager.swift */; };
+        3AF2FAC2218528B6007CFA4E /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */; };
+        3AF2FAC321852932007CFA4E /* RawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D462185125800E47C4C /* RawData.swift */; };
+        621B7D472185125800E47C4C /* RawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D462185125800E47C4C /* RawData.swift */; };
+        621B7D492185146500E47C4C /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D482185146500E47C4C /* Sample.swift */; };
+        621B7D4D218528E100E47C4C /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D4C218528E100E47C4C /* GestureViewController.swift */; };
+        62347BD82185CCAC0025CAD1 /* GesturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62347BD72185CCAC0025CAD1 /* GesturePresenter.swift */; };
+        62347BE6218678B30025CAD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62347BE5218678B30025CAD1 /* HealthKit.framework */; };
+        62347BE8218678C00025CAD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62347BE7218678C00025CAD1 /* HealthKit.framework */; };
+        62EB69C421BEC77300383BB9 /* Preprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69C221BEC77300383BB9 /* Preprocessor.swift */; };
+        62EB69C521BEC77300383BB9 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69C321BEC77300383BB9 /* Classifier.swift */; };
+        62EB69C721BED44B00383BB9 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621B7D482185146500E47C4C /* Sample.swift */; };
+        62EB69CB21BED52B00383BB9 /* CSVImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69CA21BED52B00383BB9 /* CSVImporter.swift */; };
+        62EB69CE21BED5FC00383BB9 /* RecordingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */; };
+        62EB69D021C08CD600383BB9 /* RandomForest.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 62EB69CF21C08CD600383BB9 /* RandomForest.mlmodel */; };
+        84C0CFEA722B189F72B49ED5 /* Pods_Airbender_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02265D78E071369E5EB2FB3F /* Pods_Airbender_WatchKit_Extension.framework */; };
+        9419755D4D3DBCEE07935B65 /* Pods_AirbenderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DB905CF646D8ECC5439FCE /* Pods_AirbenderTests.framework */; };
+        97969573295719E697BA8427 /* Pods_Airbender_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10AB72C7B29E71867D694089 /* Pods_Airbender_WatchKit_App.framework */; };
+        AF4A15AF12DAB5F00928468E /* Pods_AirbenderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717A1241B6B5E67E0B6852BA /* Pods_AirbenderUITests.framework */; };
+        E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
+        E10D1ED921BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
+        E10D1EDE21BF0E05006B1976 /* ProcessingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */; };
+        E126296B21BF277E009D3D21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF221BF0D910048C5EC /* HomeViewController.swift */; };
+        E126296C21BF2783009D3D21 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF421BF10AF0048C5EC /* HistoryTableViewController.swift */; };
+        E126296E21C043EF009D3D21 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126296D21C043EF009D3D21 /* FileReader.swift */; };
+        E126297221C055F8009D3D21 /* DataFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297121C055F8009D3D21 /* DataFrame.swift */; };
+        E126297A21C19E01009D3D21 /* SampleFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297921C19E01009D3D21 /* SampleFrame.swift */; };
+        E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A37219077C700A1CA0F /* FileWriter.swift */; };
+        E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A38219077C700A1CA0F /* CSVExporter.swift */; };
+        FAD242F9E43D7679DF3EA8D6 /* Pods_Airbender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0A2B56C9F61179C4F250C1 /* Pods_Airbender.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3A354EDF2182196F0054DE2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A354EC22182196E0054DE2C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A354EC92182196E0054DE2C;
-			remoteInfo = Airbender;
-		};
-		3A354EEA2182196F0054DE2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A354EC22182196E0054DE2C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A354EC92182196E0054DE2C;
-			remoteInfo = Airbender;
-		};
-		3A354EF42182196F0054DE2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A354EC22182196E0054DE2C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A354EF12182196F0054DE2C;
-			remoteInfo = "Airbender WatchKit App";
-		};
-		3A354F032182196F0054DE2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3A354EC22182196E0054DE2C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A354F002182196F0054DE2C;
-			remoteInfo = "Airbender WatchKit Extension";
-		};
+        3A354EDF2182196F0054DE2C /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 3A354EC22182196E0054DE2C /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 3A354EC92182196E0054DE2C;
+            remoteInfo = Airbender;
+        };
+        3A354EEA2182196F0054DE2C /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 3A354EC22182196E0054DE2C /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 3A354EC92182196E0054DE2C;
+            remoteInfo = Airbender;
+        };
+        3A354EF42182196F0054DE2C /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 3A354EC22182196E0054DE2C /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 3A354EF12182196F0054DE2C;
+            remoteInfo = "Airbender WatchKit App";
+        };
+        3A354F032182196F0054DE2C /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = 3A354EC22182196E0054DE2C /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = 3A354F002182196F0054DE2C;
+            remoteInfo = "Airbender WatchKit Extension";
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3A354F15218219700054DE2C /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				3A354F022182196F0054DE2C /* Airbender WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A354F19218219700054DE2C /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				3A354EF32182196F0054DE2C /* Airbender WatchKit App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        3A354F15218219700054DE2C /* Embed App Extensions */ = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "";
+            dstSubfolderSpec = 13;
+            files = (
+                3A354F022182196F0054DE2C /* Airbender WatchKit Extension.appex in Embed App Extensions */,
+            );
+            name = "Embed App Extensions";
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3A354F19218219700054DE2C /* Embed Watch Content */ = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+            dstSubfolderSpec = 16;
+            files = (
+                3A354EF32182196F0054DE2C /* Airbender WatchKit App.app in Embed Watch Content */,
+            );
+            name = "Embed Watch Content";
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		02265D78E071369E5EB2FB3F /* Pods_Airbender_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airbender_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C731C9A8CFC43A2E5D97377 /* Pods-Airbender WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit Extension/Pods-Airbender WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		10AB72C7B29E71867D694089 /* Pods_Airbender_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airbender_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14DB905CF646D8ECC5439FCE /* Pods_AirbenderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirbenderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		29B7CD843BAB0A2BBC0447AA /* Pods-Airbender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender/Pods-Airbender.release.xcconfig"; sourceTree = "<group>"; };
-		2ED7CC2DE16940BBBB5258A4 /* Pods-Airbender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender/Pods-Airbender.debug.xcconfig"; sourceTree = "<group>"; };
-		3A354ECA2182196E0054DE2C /* Airbender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airbender.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A354ECD2182196E0054DE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A354ECF2182196E0054DE2C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		3A354ED22182196E0054DE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A354ED42182196F0054DE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A354ED72182196F0054DE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3A354ED92182196F0054DE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A354EDE2182196F0054DE2C /* AirbenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirbenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A354EE92182196F0054DE2C /* AirbenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirbenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A354EF22182196F0054DE2C /* Airbender WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airbender WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A354EF82182196F0054DE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		3A354EFA2182196F0054DE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A354EFC2182196F0054DE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A354F012182196F0054DE2C /* Airbender WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Airbender WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A354F062182196F0054DE2C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		3A354F082182196F0054DE2C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		3A354F0C218219700054DE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A354F0E218219700054DE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A3776162182302200FF685C /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
-		3AEDABF021BF0D7E0048C5EC /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		3AEDABF221BF0D910048C5EC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		3AEDABF421BF10AF0048C5EC /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
-		3AEDABF721BF13350048C5EC /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
-		3AEDABFA21BF19BB0048C5EC /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
-		3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
-		42095FD638B19475BA95DB15 /* Pods-AirbenderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderUITests/Pods-AirbenderUITests.release.xcconfig"; sourceTree = "<group>"; };
-		42E1AD7D3F65D7B03E4D03D9 /* Pods-AirbenderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderUITests/Pods-AirbenderUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4D0A2B56C9F61179C4F250C1 /* Pods_Airbender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airbender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51134A5A1304C513BE1A2868 /* Pods-Airbender WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit App/Pods-Airbender WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		59C1EF2D65AF46CD9F415626 /* Pods-AirbenderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderTests/Pods-AirbenderTests.debug.xcconfig"; sourceTree = "<group>"; };
-		621B7D462185125800E47C4C /* RawData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawData.swift; sourceTree = "<group>"; };
-		621B7D482185146500E47C4C /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
-		621B7D4C218528E100E47C4C /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
-		62347BD72185CCAC0025CAD1 /* GesturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturePresenter.swift; sourceTree = "<group>"; };
-		62347BDC218642980025CAD1 /* Airbender WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Airbender WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		62347BE2218643680025CAD1 /* Airbender.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Airbender.entitlements; sourceTree = "<group>"; };
-		62347BE5218678B30025CAD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
-		62347BE7218678C00025CAD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		62EB69C221BEC77300383BB9 /* Preprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preprocessor.swift; sourceTree = "<group>"; };
-		62EB69C321BEC77300383BB9 /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
-		62EB69CA21BED52B00383BB9 /* CSVImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVImporter.swift; sourceTree = "<group>"; };
-		62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingEngine.swift; sourceTree = "<group>"; };
-		717A1241B6B5E67E0B6852BA /* Pods_AirbenderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirbenderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CAC9142F839818C8B647D53 /* Pods-AirbenderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderTests/Pods-AirbenderTests.release.xcconfig"; sourceTree = "<group>"; };
-		E10D1ED721BDE0BC006B1976 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingEngine.swift; sourceTree = "<group>"; };
-		E126296D21C043EF009D3D21 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
-		E126297121C055F8009D3D21 /* DataFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFrame.swift; sourceTree = "<group>"; };
-		E126297921C19E01009D3D21 /* SampleFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFrame.swift; sourceTree = "<group>"; };
-		E1DF4A37219077C700A1CA0F /* FileWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
-		E1DF4A38219077C700A1CA0F /* CSVExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVExporter.swift; sourceTree = "<group>"; };
-		E6F6CC0BD652703DCEC80ED6 /* Pods-Airbender WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit App/Pods-Airbender WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		EEA407B2CC443E758CAE0591 /* Pods-Airbender WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit Extension/Pods-Airbender WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+        02265D78E071369E5EB2FB3F /* Pods_Airbender_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airbender_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        0C731C9A8CFC43A2E5D97377 /* Pods-Airbender WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit Extension/Pods-Airbender WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+        10AB72C7B29E71867D694089 /* Pods_Airbender_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airbender_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        14DB905CF646D8ECC5439FCE /* Pods_AirbenderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirbenderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        29B7CD843BAB0A2BBC0447AA /* Pods-Airbender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender/Pods-Airbender.release.xcconfig"; sourceTree = "<group>"; };
+        2ED7CC2DE16940BBBB5258A4 /* Pods-Airbender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender/Pods-Airbender.debug.xcconfig"; sourceTree = "<group>"; };
+        3A354ECA2182196E0054DE2C /* Airbender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airbender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        3A354ECD2182196E0054DE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        3A354ECF2182196E0054DE2C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+        3A354ED22182196E0054DE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        3A354ED42182196F0054DE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        3A354ED72182196F0054DE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        3A354ED92182196F0054DE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        3A354EDE2182196F0054DE2C /* AirbenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirbenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        3A354EE92182196F0054DE2C /* AirbenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirbenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        3A354EF22182196F0054DE2C /* Airbender WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airbender WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+        3A354EF82182196F0054DE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+        3A354EFA2182196F0054DE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        3A354EFC2182196F0054DE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        3A354F012182196F0054DE2C /* Airbender WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Airbender WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+        3A354F062182196F0054DE2C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+        3A354F082182196F0054DE2C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+        3A354F0C218219700054DE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        3A354F0E218219700054DE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        3A3776162182302200FF685C /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+        3AEDABF021BF0D7E0048C5EC /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+        3AEDABF221BF0D910048C5EC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+        3AEDABF421BF10AF0048C5EC /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+        3AEDABF721BF13350048C5EC /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+        3AEDABFA21BF19BB0048C5EC /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
+        3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
+        42095FD638B19475BA95DB15 /* Pods-AirbenderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderUITests/Pods-AirbenderUITests.release.xcconfig"; sourceTree = "<group>"; };
+        42E1AD7D3F65D7B03E4D03D9 /* Pods-AirbenderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderUITests/Pods-AirbenderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+        4D0A2B56C9F61179C4F250C1 /* Pods_Airbender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Airbender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        51134A5A1304C513BE1A2868 /* Pods-Airbender WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit App/Pods-Airbender WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+        59C1EF2D65AF46CD9F415626 /* Pods-AirbenderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderTests/Pods-AirbenderTests.debug.xcconfig"; sourceTree = "<group>"; };
+        621B7D462185125800E47C4C /* RawData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawData.swift; sourceTree = "<group>"; };
+        621B7D482185146500E47C4C /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+        621B7D4C218528E100E47C4C /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
+        62347BD72185CCAC0025CAD1 /* GesturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturePresenter.swift; sourceTree = "<group>"; };
+        62347BDC218642980025CAD1 /* Airbender WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Airbender WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+        62347BE2218643680025CAD1 /* Airbender.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Airbender.entitlements; sourceTree = "<group>"; };
+        62347BE5218678B30025CAD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+        62347BE7218678C00025CAD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+        62EB69C221BEC77300383BB9 /* Preprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preprocessor.swift; sourceTree = "<group>"; };
+        62EB69C321BEC77300383BB9 /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+        62EB69CA21BED52B00383BB9 /* CSVImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVImporter.swift; sourceTree = "<group>"; };
+        62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingEngine.swift; sourceTree = "<group>"; };
+        62EB69CF21C08CD600383BB9 /* RandomForest.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RandomForest.mlmodel; sourceTree = "<group>"; };
+        717A1241B6B5E67E0B6852BA /* Pods_AirbenderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirbenderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        8CAC9142F839818C8B647D53 /* Pods-AirbenderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderTests/Pods-AirbenderTests.release.xcconfig"; sourceTree = "<group>"; };
+        E10D1ED721BDE0BC006B1976 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+        E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingEngine.swift; sourceTree = "<group>"; };
+        E126296D21C043EF009D3D21 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+        E126297121C055F8009D3D21 /* DataFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFrame.swift; sourceTree = "<group>"; };
+        E126297921C19E01009D3D21 /* SampleFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFrame.swift; sourceTree = "<group>"; };
+        E1DF4A37219077C700A1CA0F /* FileWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
+        E1DF4A38219077C700A1CA0F /* CSVExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVExporter.swift; sourceTree = "<group>"; };
+        E6F6CC0BD652703DCEC80ED6 /* Pods-Airbender WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit App/Pods-Airbender WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+        EEA407B2CC443E758CAE0591 /* Pods-Airbender WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit Extension/Pods-Airbender WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3A354EC72182196E0054DE2C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				62347BE8218678C00025CAD1 /* HealthKit.framework in Frameworks */,
-				FAD242F9E43D7679DF3EA8D6 /* Pods_Airbender.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A354EDB2182196F0054DE2C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9419755D4D3DBCEE07935B65 /* Pods_AirbenderTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A354EE62182196F0054DE2C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D5158B97D59FBE06BBB29EF /* (null) in Frameworks */,
-				AF4A15AF12DAB5F00928468E /* Pods_AirbenderUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A354EFE2182196F0054DE2C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				62347BE6218678B30025CAD1 /* HealthKit.framework in Frameworks */,
-				84C0CFEA722B189F72B49ED5 /* Pods_Airbender_WatchKit_Extension.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FFEFFFC24BE7F3DB90A1D883 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				97969573295719E697BA8427 /* Pods_Airbender_WatchKit_App.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        3A354EC72182196E0054DE2C /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                62347BE8218678C00025CAD1 /* HealthKit.framework in Frameworks */,
+                FAD242F9E43D7679DF3EA8D6 /* Pods_Airbender.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3A354EDB2182196F0054DE2C /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                9419755D4D3DBCEE07935B65 /* Pods_AirbenderTests.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3A354EE62182196F0054DE2C /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                1D5158B97D59FBE06BBB29EF /* (null) in Frameworks */,
+                AF4A15AF12DAB5F00928468E /* Pods_AirbenderUITests.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3A354EFE2182196F0054DE2C /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                62347BE6218678B30025CAD1 /* HealthKit.framework in Frameworks */,
+                84C0CFEA722B189F72B49ED5 /* Pods_Airbender_WatchKit_Extension.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        FFEFFFC24BE7F3DB90A1D883 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                97969573295719E697BA8427 /* Pods_Airbender_WatchKit_App.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A354EC12182196E0054DE2C = {
-			isa = PBXGroup;
-			children = (
-				3A354ECC2182196E0054DE2C /* Airbender */,
-				3A354EF62182196F0054DE2C /* Airbender WatchKit App */,
-				3A354F052182196F0054DE2C /* Airbender WatchKit Extension */,
-				3A354ECB2182196E0054DE2C /* Products */,
-				62347BDD218642980025CAD1 /* Frameworks */,
-				AF8BF77DC3A51520FF662351 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		3A354ECB2182196E0054DE2C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3A354ECA2182196E0054DE2C /* Airbender.app */,
-				3A354EDE2182196F0054DE2C /* AirbenderTests.xctest */,
-				3A354EE92182196F0054DE2C /* AirbenderUITests.xctest */,
-				3A354EF22182196F0054DE2C /* Airbender WatchKit App.app */,
-				3A354F012182196F0054DE2C /* Airbender WatchKit Extension.appex */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3A354ECC2182196E0054DE2C /* Airbender */ = {
-			isa = PBXGroup;
-			children = (
-				62347BE2218643680025CAD1 /* Airbender.entitlements */,
-				62EB69CC21BED54E00383BB9 /* General */,
-				62EB69C121BEC77300383BB9 /* MachineLearning */,
-				3AEDABF921BF19180048C5EC /* Model */,
-				E15F3EE921853D4E0095D30D /* CSV */,
-				62EB69C921BED49D00383BB9 /* Communication */,
-				62EB69C821BED47F00383BB9 /* Data */,
-				3A37761421822FF900FF685C /* Recording */,
-				3A37761521822FF900FF685C /* ViewController */,
-				3AEDABF621BF13000048C5EC /* TableCell */,
-				3A354ED12182196E0054DE2C /* Main.storyboard */,
-				3A354ED42182196F0054DE2C /* Assets.xcassets */,
-				3A354ED62182196F0054DE2C /* LaunchScreen.storyboard */,
-				3A354ED92182196F0054DE2C /* Info.plist */,
-			);
-			path = Airbender;
-			sourceTree = "<group>";
-		};
-		3A354EF62182196F0054DE2C /* Airbender WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				3A354EF72182196F0054DE2C /* Interface.storyboard */,
-				3A354EFA2182196F0054DE2C /* Assets.xcassets */,
-				3A354EFC2182196F0054DE2C /* Info.plist */,
-			);
-			path = "Airbender WatchKit App";
-			sourceTree = "<group>";
-		};
-		3A354F052182196F0054DE2C /* Airbender WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				62347BDC218642980025CAD1 /* Airbender WatchKit Extension.entitlements */,
-				3A3776162182302200FF685C /* MotionManager.swift */,
-				3A354F062182196F0054DE2C /* InterfaceController.swift */,
-				3A354F082182196F0054DE2C /* ExtensionDelegate.swift */,
-				3A354F0C218219700054DE2C /* Assets.xcassets */,
-				3A354F0E218219700054DE2C /* Info.plist */,
-			);
-			path = "Airbender WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		3A37761421822FF900FF685C /* Recording */ = {
-			isa = PBXGroup;
-			children = (
-				62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */,
-				62347BD72185CCAC0025CAD1 /* GesturePresenter.swift */,
-			);
-			path = Recording;
-			sourceTree = "<group>";
-		};
-		3A37761521822FF900FF685C /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				3A354ECF2182196E0054DE2C /* MainViewController.swift */,
-				621B7D4C218528E100E47C4C /* GestureViewController.swift */,
-				3AEDABF021BF0D7E0048C5EC /* InfoViewController.swift */,
-				3AEDABF221BF0D910048C5EC /* HomeViewController.swift */,
-				3AEDABF421BF10AF0048C5EC /* HistoryTableViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		3AEDABF621BF13000048C5EC /* TableCell */ = {
-			isa = PBXGroup;
-			children = (
-				3AEDABF721BF13350048C5EC /* HistoryTableViewCell.swift */,
-			);
-			path = TableCell;
-			sourceTree = "<group>";
-		};
-		3AEDABF921BF19180048C5EC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3AEDABFA21BF19BB0048C5EC /* Gesture.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		62347BDD218642980025CAD1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				62347BE7218678C00025CAD1 /* HealthKit.framework */,
-				62347BE5218678B30025CAD1 /* HealthKit.framework */,
-				10AB72C7B29E71867D694089 /* Pods_Airbender_WatchKit_App.framework */,
-				02265D78E071369E5EB2FB3F /* Pods_Airbender_WatchKit_Extension.framework */,
-				14DB905CF646D8ECC5439FCE /* Pods_AirbenderTests.framework */,
-				4D0A2B56C9F61179C4F250C1 /* Pods_Airbender.framework */,
-				717A1241B6B5E67E0B6852BA /* Pods_AirbenderUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		62EB69C121BEC77300383BB9 /* MachineLearning */ = {
-			isa = PBXGroup;
-			children = (
-				62EB69C221BEC77300383BB9 /* Preprocessor.swift */,
-				62EB69C321BEC77300383BB9 /* Classifier.swift */,
-			);
-			path = MachineLearning;
-			sourceTree = "<group>";
-		};
-		62EB69C821BED47F00383BB9 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				621B7D462185125800E47C4C /* RawData.swift */,
-				621B7D482185146500E47C4C /* Sample.swift */,
-				E126297121C055F8009D3D21 /* DataFrame.swift */,
-				E126297921C19E01009D3D21 /* SampleFrame.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		62EB69C921BED49D00383BB9 /* Communication */ = {
-			isa = PBXGroup;
-			children = (
-				3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */,
-				E10D1ED721BDE0BC006B1976 /* Message.swift */,
-			);
-			path = Communication;
-			sourceTree = "<group>";
-		};
-		62EB69CC21BED54E00383BB9 /* General */ = {
-			isa = PBXGroup;
-			children = (
-				3A354ECD2182196E0054DE2C /* AppDelegate.swift */,
-				E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */,
-			);
-			path = General;
-			sourceTree = "<group>";
-		};
-		AF8BF77DC3A51520FF662351 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2ED7CC2DE16940BBBB5258A4 /* Pods-Airbender.debug.xcconfig */,
-				29B7CD843BAB0A2BBC0447AA /* Pods-Airbender.release.xcconfig */,
-				E6F6CC0BD652703DCEC80ED6 /* Pods-Airbender WatchKit App.release.xcconfig */,
-				0C731C9A8CFC43A2E5D97377 /* Pods-Airbender WatchKit Extension.debug.xcconfig */,
-				59C1EF2D65AF46CD9F415626 /* Pods-AirbenderTests.debug.xcconfig */,
-				51134A5A1304C513BE1A2868 /* Pods-Airbender WatchKit App.debug.xcconfig */,
-				EEA407B2CC443E758CAE0591 /* Pods-Airbender WatchKit Extension.release.xcconfig */,
-				8CAC9142F839818C8B647D53 /* Pods-AirbenderTests.release.xcconfig */,
-				42E1AD7D3F65D7B03E4D03D9 /* Pods-AirbenderUITests.debug.xcconfig */,
-				42095FD638B19475BA95DB15 /* Pods-AirbenderUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E15F3EE921853D4E0095D30D /* CSV */ = {
-			isa = PBXGroup;
-			children = (
-				E1DF4A38219077C700A1CA0F /* CSVExporter.swift */,
-				E1DF4A37219077C700A1CA0F /* FileWriter.swift */,
-				E126296D21C043EF009D3D21 /* FileReader.swift */,
-				62EB69CA21BED52B00383BB9 /* CSVImporter.swift */,
-			);
-			path = CSV;
-			sourceTree = "<group>";
-		};
+        3A354EC12182196E0054DE2C = {
+            isa = PBXGroup;
+            children = (
+                3A354ECC2182196E0054DE2C /* Airbender */,
+                3A354EF62182196F0054DE2C /* Airbender WatchKit App */,
+                3A354F052182196F0054DE2C /* Airbender WatchKit Extension */,
+                3A354ECB2182196E0054DE2C /* Products */,
+                62347BDD218642980025CAD1 /* Frameworks */,
+                AF8BF77DC3A51520FF662351 /* Pods */,
+            );
+            sourceTree = "<group>";
+        };
+        3A354ECB2182196E0054DE2C /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                3A354ECA2182196E0054DE2C /* Airbender.app */,
+                3A354EDE2182196F0054DE2C /* AirbenderTests.xctest */,
+                3A354EE92182196F0054DE2C /* AirbenderUITests.xctest */,
+                3A354EF22182196F0054DE2C /* Airbender WatchKit App.app */,
+                3A354F012182196F0054DE2C /* Airbender WatchKit Extension.appex */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        3A354ECC2182196E0054DE2C /* Airbender */ = {
+            isa = PBXGroup;
+            children = (
+                62347BE2218643680025CAD1 /* Airbender.entitlements */,
+                62EB69CC21BED54E00383BB9 /* General */,
+                62EB69C121BEC77300383BB9 /* MachineLearning */,
+                3AEDABF921BF19180048C5EC /* Model */,
+                E15F3EE921853D4E0095D30D /* CSV */,
+                62EB69C921BED49D00383BB9 /* Communication */,
+                62EB69C821BED47F00383BB9 /* Data */,
+                3A37761421822FF900FF685C /* Recording */,
+                3A37761521822FF900FF685C /* ViewController */,
+                3AEDABF621BF13000048C5EC /* TableCell */,
+                3A354ED12182196E0054DE2C /* Main.storyboard */,
+                3A354ED42182196F0054DE2C /* Assets.xcassets */,
+                3A354ED62182196F0054DE2C /* LaunchScreen.storyboard */,
+                3A354ED92182196F0054DE2C /* Info.plist */,
+            );
+            path = Airbender;
+            sourceTree = "<group>";
+        };
+        3A354EF62182196F0054DE2C /* Airbender WatchKit App */ = {
+            isa = PBXGroup;
+            children = (
+                3A354EF72182196F0054DE2C /* Interface.storyboard */,
+                3A354EFA2182196F0054DE2C /* Assets.xcassets */,
+                3A354EFC2182196F0054DE2C /* Info.plist */,
+            );
+            path = "Airbender WatchKit App";
+            sourceTree = "<group>";
+        };
+        3A354F052182196F0054DE2C /* Airbender WatchKit Extension */ = {
+            isa = PBXGroup;
+            children = (
+                62347BDC218642980025CAD1 /* Airbender WatchKit Extension.entitlements */,
+                3A3776162182302200FF685C /* MotionManager.swift */,
+                3A354F062182196F0054DE2C /* InterfaceController.swift */,
+                3A354F082182196F0054DE2C /* ExtensionDelegate.swift */,
+                3A354F0C218219700054DE2C /* Assets.xcassets */,
+                3A354F0E218219700054DE2C /* Info.plist */,
+            );
+            path = "Airbender WatchKit Extension";
+            sourceTree = "<group>";
+        };
+        3A37761421822FF900FF685C /* Recording */ = {
+            isa = PBXGroup;
+            children = (
+                62EB69CD21BED5FC00383BB9 /* RecordingEngine.swift */,
+                62347BD72185CCAC0025CAD1 /* GesturePresenter.swift */,
+            );
+            path = Recording;
+            sourceTree = "<group>";
+        };
+        3A37761521822FF900FF685C /* ViewController */ = {
+            isa = PBXGroup;
+            children = (
+                3A354ECF2182196E0054DE2C /* MainViewController.swift */,
+                621B7D4C218528E100E47C4C /* GestureViewController.swift */,
+                3AEDABF021BF0D7E0048C5EC /* InfoViewController.swift */,
+                3AEDABF221BF0D910048C5EC /* HomeViewController.swift */,
+                3AEDABF421BF10AF0048C5EC /* HistoryTableViewController.swift */,
+            );
+            path = ViewController;
+            sourceTree = "<group>";
+        };
+        3AEDABF621BF13000048C5EC /* TableCell */ = {
+            isa = PBXGroup;
+            children = (
+                3AEDABF721BF13350048C5EC /* HistoryTableViewCell.swift */,
+            );
+            path = TableCell;
+            sourceTree = "<group>";
+        };
+        3AEDABF921BF19180048C5EC /* Model */ = {
+            isa = PBXGroup;
+            children = (
+                3AEDABFA21BF19BB0048C5EC /* Gesture.swift */,
+            );
+            path = Model;
+            sourceTree = "<group>";
+        };
+        62347BDD218642980025CAD1 /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+                62347BE7218678C00025CAD1 /* HealthKit.framework */,
+                62347BE5218678B30025CAD1 /* HealthKit.framework */,
+                10AB72C7B29E71867D694089 /* Pods_Airbender_WatchKit_App.framework */,
+                02265D78E071369E5EB2FB3F /* Pods_Airbender_WatchKit_Extension.framework */,
+                14DB905CF646D8ECC5439FCE /* Pods_AirbenderTests.framework */,
+                4D0A2B56C9F61179C4F250C1 /* Pods_Airbender.framework */,
+                717A1241B6B5E67E0B6852BA /* Pods_AirbenderUITests.framework */,
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+        62EB69C121BEC77300383BB9 /* MachineLearning */ = {
+            isa = PBXGroup;
+            children = (
+				62EB69CF21C08CD600383BB9 /* RandomForest.mlmodel */,
+				62EB69C221BEC77300383BB9 /* PreProcessor.swift */,
+                62EB69C321BEC77300383BB9 /* Classifier.swift */,
+            );
+            path = MachineLearning;
+            sourceTree = "<group>";
+        };
+        62EB69C821BED47F00383BB9 /* Data */ = {
+            isa = PBXGroup;
+            children = (
+                621B7D462185125800E47C4C /* RawData.swift */,
+                621B7D482185146500E47C4C /* Sample.swift */,
+                E126297121C055F8009D3D21 /* DataFrame.swift */,
+                E126297921C19E01009D3D21 /* SampleFrame.swift */,
+            );
+            path = Data;
+            sourceTree = "<group>";
+        };
+        62EB69C921BED49D00383BB9 /* Communication */ = {
+            isa = PBXGroup;
+            children = (
+                3AF2FABF218520C0007CFA4E /* CommunicationManager.swift */,
+                E10D1ED721BDE0BC006B1976 /* Message.swift */,
+            );
+            path = Communication;
+            sourceTree = "<group>";
+        };
+        62EB69CC21BED54E00383BB9 /* General */ = {
+            isa = PBXGroup;
+            children = (
+                3A354ECD2182196E0054DE2C /* AppDelegate.swift */,
+                E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */,
+            );
+            path = General;
+            sourceTree = "<group>";
+        };
+        AF8BF77DC3A51520FF662351 /* Pods */ = {
+            isa = PBXGroup;
+            children = (
+                2ED7CC2DE16940BBBB5258A4 /* Pods-Airbender.debug.xcconfig */,
+                29B7CD843BAB0A2BBC0447AA /* Pods-Airbender.release.xcconfig */,
+                E6F6CC0BD652703DCEC80ED6 /* Pods-Airbender WatchKit App.release.xcconfig */,
+                0C731C9A8CFC43A2E5D97377 /* Pods-Airbender WatchKit Extension.debug.xcconfig */,
+                59C1EF2D65AF46CD9F415626 /* Pods-AirbenderTests.debug.xcconfig */,
+                51134A5A1304C513BE1A2868 /* Pods-Airbender WatchKit App.debug.xcconfig */,
+                EEA407B2CC443E758CAE0591 /* Pods-Airbender WatchKit Extension.release.xcconfig */,
+                8CAC9142F839818C8B647D53 /* Pods-AirbenderTests.release.xcconfig */,
+                42E1AD7D3F65D7B03E4D03D9 /* Pods-AirbenderUITests.debug.xcconfig */,
+                42095FD638B19475BA95DB15 /* Pods-AirbenderUITests.release.xcconfig */,
+            );
+            name = Pods;
+            sourceTree = "<group>";
+        };
+        E15F3EE921853D4E0095D30D /* CSV */ = {
+            isa = PBXGroup;
+            children = (
+                E1DF4A38219077C700A1CA0F /* CSVExporter.swift */,
+                E1DF4A37219077C700A1CA0F /* FileWriter.swift */,
+                E126296D21C043EF009D3D21 /* FileReader.swift */,
+                62EB69CA21BED52B00383BB9 /* CSVImporter.swift */,
+            );
+            path = CSV;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A354EC92182196E0054DE2C /* Airbender */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A354F1A218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender" */;
-			buildPhases = (
-				65BBD1130FD27E62F3CAEE82 /* [CP] Check Pods Manifest.lock */,
-				3A354EC62182196E0054DE2C /* Sources */,
-				3A354EC72182196E0054DE2C /* Frameworks */,
-				3A354EC82182196E0054DE2C /* Resources */,
-				3A354F19218219700054DE2C /* Embed Watch Content */,
-				559E62DEE43E1BBBA476DBFB /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3A354EF52182196F0054DE2C /* PBXTargetDependency */,
-			);
-			name = Airbender;
-			productName = Airbender;
-			productReference = 3A354ECA2182196E0054DE2C /* Airbender.app */;
-			productType = "com.apple.product-type.application";
-		};
-		3A354EDD2182196F0054DE2C /* AirbenderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A354F1D218219700054DE2C /* Build configuration list for PBXNativeTarget "AirbenderTests" */;
-			buildPhases = (
-				53B8C76AFADEEED9DB252979 /* [CP] Check Pods Manifest.lock */,
-				3A354EDA2182196F0054DE2C /* Sources */,
-				3A354EDB2182196F0054DE2C /* Frameworks */,
-				3A354EDC2182196F0054DE2C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3A354EE02182196F0054DE2C /* PBXTargetDependency */,
-			);
-			name = AirbenderTests;
-			productName = AirbenderTests;
-			productReference = 3A354EDE2182196F0054DE2C /* AirbenderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3A354EE82182196F0054DE2C /* AirbenderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A354F20218219700054DE2C /* Build configuration list for PBXNativeTarget "AirbenderUITests" */;
-			buildPhases = (
-				AE655BF127AB68EACD1E0267 /* [CP] Check Pods Manifest.lock */,
-				3A354EE52182196F0054DE2C /* Sources */,
-				3A354EE62182196F0054DE2C /* Frameworks */,
-				3A354EE72182196F0054DE2C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3A354EEB2182196F0054DE2C /* PBXTargetDependency */,
-			);
-			name = AirbenderUITests;
-			productName = AirbenderUITests;
-			productReference = 3A354EE92182196F0054DE2C /* AirbenderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		3A354EF12182196F0054DE2C /* Airbender WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A354F16218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender WatchKit App" */;
-			buildPhases = (
-				6A5021801A4DBBE4B3786BBB /* [CP] Check Pods Manifest.lock */,
-				3A354EF02182196F0054DE2C /* Resources */,
-				3A354F15218219700054DE2C /* Embed App Extensions */,
-				FFEFFFC24BE7F3DB90A1D883 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3A354F042182196F0054DE2C /* PBXTargetDependency */,
-			);
-			name = "Airbender WatchKit App";
-			productName = "Airbender WatchKit App";
-			productReference = 3A354EF22182196F0054DE2C /* Airbender WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		3A354F002182196F0054DE2C /* Airbender WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A354F12218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender WatchKit Extension" */;
-			buildPhases = (
-				7975B5868B44E02EC521C1E8 /* [CP] Check Pods Manifest.lock */,
-				3A354EFD2182196F0054DE2C /* Sources */,
-				3A354EFE2182196F0054DE2C /* Frameworks */,
-				3A354EFF2182196F0054DE2C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Airbender WatchKit Extension";
-			productName = "Airbender WatchKit Extension";
-			productReference = 3A354F012182196F0054DE2C /* Airbender WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
+        3A354EC92182196E0054DE2C /* Airbender */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 3A354F1A218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender" */;
+            buildPhases = (
+                65BBD1130FD27E62F3CAEE82 /* [CP] Check Pods Manifest.lock */,
+                3A354EC62182196E0054DE2C /* Sources */,
+                3A354EC72182196E0054DE2C /* Frameworks */,
+                3A354EC82182196E0054DE2C /* Resources */,
+                3A354F19218219700054DE2C /* Embed Watch Content */,
+                559E62DEE43E1BBBA476DBFB /* [CP] Embed Pods Frameworks */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                3A354EF52182196F0054DE2C /* PBXTargetDependency */,
+            );
+            name = Airbender;
+            productName = Airbender;
+            productReference = 3A354ECA2182196E0054DE2C /* Airbender.app */;
+            productType = "com.apple.product-type.application";
+        };
+        3A354EDD2182196F0054DE2C /* AirbenderTests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 3A354F1D218219700054DE2C /* Build configuration list for PBXNativeTarget "AirbenderTests" */;
+            buildPhases = (
+                53B8C76AFADEEED9DB252979 /* [CP] Check Pods Manifest.lock */,
+                3A354EDA2182196F0054DE2C /* Sources */,
+                3A354EDB2182196F0054DE2C /* Frameworks */,
+                3A354EDC2182196F0054DE2C /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                3A354EE02182196F0054DE2C /* PBXTargetDependency */,
+            );
+            name = AirbenderTests;
+            productName = AirbenderTests;
+            productReference = 3A354EDE2182196F0054DE2C /* AirbenderTests.xctest */;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+        3A354EE82182196F0054DE2C /* AirbenderUITests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 3A354F20218219700054DE2C /* Build configuration list for PBXNativeTarget "AirbenderUITests" */;
+            buildPhases = (
+                AE655BF127AB68EACD1E0267 /* [CP] Check Pods Manifest.lock */,
+                3A354EE52182196F0054DE2C /* Sources */,
+                3A354EE62182196F0054DE2C /* Frameworks */,
+                3A354EE72182196F0054DE2C /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                3A354EEB2182196F0054DE2C /* PBXTargetDependency */,
+            );
+            name = AirbenderUITests;
+            productName = AirbenderUITests;
+            productReference = 3A354EE92182196F0054DE2C /* AirbenderUITests.xctest */;
+            productType = "com.apple.product-type.bundle.ui-testing";
+        };
+        3A354EF12182196F0054DE2C /* Airbender WatchKit App */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 3A354F16218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender WatchKit App" */;
+            buildPhases = (
+                6A5021801A4DBBE4B3786BBB /* [CP] Check Pods Manifest.lock */,
+                3A354EF02182196F0054DE2C /* Resources */,
+                3A354F15218219700054DE2C /* Embed App Extensions */,
+                FFEFFFC24BE7F3DB90A1D883 /* Frameworks */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                3A354F042182196F0054DE2C /* PBXTargetDependency */,
+            );
+            name = "Airbender WatchKit App";
+            productName = "Airbender WatchKit App";
+            productReference = 3A354EF22182196F0054DE2C /* Airbender WatchKit App.app */;
+            productType = "com.apple.product-type.application.watchapp2";
+        };
+        3A354F002182196F0054DE2C /* Airbender WatchKit Extension */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = 3A354F12218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender WatchKit Extension" */;
+            buildPhases = (
+                7975B5868B44E02EC521C1E8 /* [CP] Check Pods Manifest.lock */,
+                3A354EFD2182196F0054DE2C /* Sources */,
+                3A354EFE2182196F0054DE2C /* Frameworks */,
+                3A354EFF2182196F0054DE2C /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = "Airbender WatchKit Extension";
+            productName = "Airbender WatchKit Extension";
+            productReference = 3A354F012182196F0054DE2C /* Airbender WatchKit Extension.appex */;
+            productType = "com.apple.product-type.watchkit2-extension";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3A354EC22182196E0054DE2C /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "FH Hagenberg";
-				TargetAttributes = {
-					3A354EC92182196E0054DE2C = {
-						CreatedOnToolsVersion = 10.0;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
-							};
-							com.apple.HealthKit = {
-								enabled = 1;
-							};
-						};
-					};
-					3A354EDD2182196F0054DE2C = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 3A354EC92182196E0054DE2C;
-					};
-					3A354EE82182196F0054DE2C = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 3A354EC92182196E0054DE2C;
-					};
-					3A354EF12182196F0054DE2C = {
-						CreatedOnToolsVersion = 10.0;
-					};
-					3A354F002182196F0054DE2C = {
-						CreatedOnToolsVersion = 10.0;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-							com.apple.HealthKit.watchos = {
-								enabled = 1;
-							};
-						};
-					};
-				};
-			};
-			buildConfigurationList = 3A354EC52182196E0054DE2C /* Build configuration list for PBXProject "Airbender" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 3A354EC12182196E0054DE2C;
-			productRefGroup = 3A354ECB2182196E0054DE2C /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				3A354EC92182196E0054DE2C /* Airbender */,
-				3A354EDD2182196F0054DE2C /* AirbenderTests */,
-				3A354EE82182196F0054DE2C /* AirbenderUITests */,
-				3A354EF12182196F0054DE2C /* Airbender WatchKit App */,
-				3A354F002182196F0054DE2C /* Airbender WatchKit Extension */,
-			);
-		};
+        3A354EC22182196E0054DE2C /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 1000;
+                LastUpgradeCheck = 1000;
+                ORGANIZATIONNAME = "FH Hagenberg";
+                TargetAttributes = {
+                    3A354EC92182196E0054DE2C = {
+                        CreatedOnToolsVersion = 10.0;
+                        SystemCapabilities = {
+                            com.apple.ApplicationGroups.iOS = {
+                                enabled = 0;
+                            };
+                            com.apple.HealthKit = {
+                                enabled = 1;
+                            };
+                        };
+                    };
+                    3A354EDD2182196F0054DE2C = {
+                        CreatedOnToolsVersion = 10.0;
+                        TestTargetID = 3A354EC92182196E0054DE2C;
+                    };
+                    3A354EE82182196F0054DE2C = {
+                        CreatedOnToolsVersion = 10.0;
+                        TestTargetID = 3A354EC92182196E0054DE2C;
+                    };
+                    3A354EF12182196F0054DE2C = {
+                        CreatedOnToolsVersion = 10.0;
+                    };
+                    3A354F002182196F0054DE2C = {
+                        CreatedOnToolsVersion = 10.0;
+                        SystemCapabilities = {
+                            com.apple.ApplicationGroups.iOS = {
+                                enabled = 1;
+                            };
+                            com.apple.HealthKit.watchos = {
+                                enabled = 1;
+                            };
+                        };
+                    };
+                };
+            };
+            buildConfigurationList = 3A354EC52182196E0054DE2C /* Build configuration list for PBXProject "Airbender" */;
+            compatibilityVersion = "Xcode 9.3";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = 3A354EC12182196E0054DE2C;
+            productRefGroup = 3A354ECB2182196E0054DE2C /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                3A354EC92182196E0054DE2C /* Airbender */,
+                3A354EDD2182196F0054DE2C /* AirbenderTests */,
+                3A354EE82182196F0054DE2C /* AirbenderUITests */,
+                3A354EF12182196F0054DE2C /* Airbender WatchKit App */,
+                3A354F002182196F0054DE2C /* Airbender WatchKit Extension */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3A354EC82182196E0054DE2C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A354ED82182196F0054DE2C /* LaunchScreen.storyboard in Resources */,
-				3A354ED52182196F0054DE2C /* Assets.xcassets in Resources */,
-				3A354ED32182196E0054DE2C /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A354EDC2182196F0054DE2C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A354EE72182196F0054DE2C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A354EF02182196F0054DE2C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A354EFB2182196F0054DE2C /* Assets.xcassets in Resources */,
-				3A354EF92182196F0054DE2C /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A354EFF2182196F0054DE2C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A354F0D218219700054DE2C /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        3A354EC82182196E0054DE2C /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                3A354ED82182196F0054DE2C /* LaunchScreen.storyboard in Resources */,
+                3A354ED52182196F0054DE2C /* Assets.xcassets in Resources */,
+                3A354ED32182196E0054DE2C /* Main.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3A354EDC2182196F0054DE2C /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3A354EE72182196F0054DE2C /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3A354EF02182196F0054DE2C /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                3A354EFB2182196F0054DE2C /* Assets.xcassets in Resources */,
+                3A354EF92182196F0054DE2C /* Interface.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3A354EFF2182196F0054DE2C /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                3A354F0D218219700054DE2C /* Assets.xcassets in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		53B8C76AFADEEED9DB252979 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AirbenderTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		559E62DEE43E1BBBA476DBFB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Airbender/Pods-Airbender-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Surge/Surge.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Surge.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Airbender/Pods-Airbender-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		65BBD1130FD27E62F3CAEE82 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Airbender-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A5021801A4DBBE4B3786BBB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Airbender WatchKit App-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7975B5868B44E02EC521C1E8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Airbender WatchKit Extension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE655BF127AB68EACD1E0267 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AirbenderUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
+        53B8C76AFADEEED9DB252979 /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-AirbenderTests-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        559E62DEE43E1BBBA476DBFB /* [CP] Embed Pods Frameworks */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${SRCROOT}/Pods/Target Support Files/Pods-Airbender/Pods-Airbender-frameworks.sh",
+                "${BUILT_PRODUCTS_DIR}/Surge/Surge.framework",
+            );
+            name = "[CP] Embed Pods Frameworks";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Surge.framework",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Airbender/Pods-Airbender-frameworks.sh\"\n";
+            showEnvVarsInLog = 0;
+        };
+        65BBD1130FD27E62F3CAEE82 /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-Airbender-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        6A5021801A4DBBE4B3786BBB /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-Airbender WatchKit App-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        7975B5868B44E02EC521C1E8 /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-Airbender WatchKit Extension-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        AE655BF127AB68EACD1E0267 /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputFileListPaths = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputFileListPaths = (
+            );
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-AirbenderUITests-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3A354EC62182196E0054DE2C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3AEDABF821BF13350048C5EC /* HistoryTableViewCell.swift in Sources */,
-				E126297221C055F8009D3D21 /* DataFrame.swift in Sources */,
-				E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */,
-				E126296B21BF277E009D3D21 /* HomeViewController.swift in Sources */,
-				62EB69C521BEC77300383BB9 /* Classifier.swift in Sources */,
-				E126297A21C19E01009D3D21 /* SampleFrame.swift in Sources */,
-				E126296C21BF2783009D3D21 /* HistoryTableViewController.swift in Sources */,
-				62EB69CB21BED52B00383BB9 /* CSVImporter.swift in Sources */,
-				3AF2FAC0218520C0007CFA4E /* CommunicationManager.swift in Sources */,
-				3AEDABF121BF0D7E0048C5EC /* InfoViewController.swift in Sources */,
-				621B7D4D218528E100E47C4C /* GestureViewController.swift in Sources */,
-				E126296E21C043EF009D3D21 /* FileReader.swift in Sources */,
-				E10D1EDE21BF0E05006B1976 /* ProcessingEngine.swift in Sources */,
-				E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */,
-				3AEDABFB21BF19BB0048C5EC /* Gesture.swift in Sources */,
-				621B7D472185125800E47C4C /* RawData.swift in Sources */,
-				3A354ED02182196E0054DE2C /* MainViewController.swift in Sources */,
-				E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */,
-				3A354ECE2182196E0054DE2C /* AppDelegate.swift in Sources */,
-				62EB69CE21BED5FC00383BB9 /* RecordingEngine.swift in Sources */,
-				62347BD82185CCAC0025CAD1 /* GesturePresenter.swift in Sources */,
-				621B7D492185146500E47C4C /* Sample.swift in Sources */,
-				62EB69C421BEC77300383BB9 /* Preprocessor.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A354EDA2182196F0054DE2C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A354EE52182196F0054DE2C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A354EFD2182196F0054DE2C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A354F092182196F0054DE2C /* ExtensionDelegate.swift in Sources */,
-				3AF2FAC121852839007CFA4E /* MotionManager.swift in Sources */,
-				3AF2FAC2218528B6007CFA4E /* CommunicationManager.swift in Sources */,
-				E10D1ED921BDE0BC006B1976 /* Message.swift in Sources */,
-				3A354F072182196F0054DE2C /* InterfaceController.swift in Sources */,
-				62EB69C721BED44B00383BB9 /* Sample.swift in Sources */,
-				3AF2FAC321852932007CFA4E /* RawData.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        3A354EC62182196E0054DE2C /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                3AEDABF821BF13350048C5EC /* HistoryTableViewCell.swift in Sources */,
+                E126297221C055F8009D3D21 /* DataFrame.swift in Sources */,
+                E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */,
+                E126296B21BF277E009D3D21 /* HomeViewController.swift in Sources */,
+                62EB69C521BEC77300383BB9 /* Classifier.swift in Sources */,
+                E126297A21C19E01009D3D21 /* SampleFrame.swift in Sources */,
+                E126296C21BF2783009D3D21 /* HistoryTableViewController.swift in Sources */,
+                62EB69CB21BED52B00383BB9 /* CSVImporter.swift in Sources */,
+                3AF2FAC0218520C0007CFA4E /* CommunicationManager.swift in Sources */,
+                62EB69D021C08CD600383BB9 /* RandomForest.mlmodel in Sources */,
+                3AEDABF121BF0D7E0048C5EC /* InfoViewController.swift in Sources */,
+                621B7D4D218528E100E47C4C /* GestureViewController.swift in Sources */,
+                E126296E21C043EF009D3D21 /* FileReader.swift in Sources */,
+                E10D1EDE21BF0E05006B1976 /* ProcessingEngine.swift in Sources */,
+                E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */,
+                3AEDABFB21BF19BB0048C5EC /* Gesture.swift in Sources */,
+                621B7D472185125800E47C4C /* RawData.swift in Sources */,
+                3A354ED02182196E0054DE2C /* MainViewController.swift in Sources */,
+                E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */,
+                3A354ECE2182196E0054DE2C /* AppDelegate.swift in Sources */,
+                62EB69CE21BED5FC00383BB9 /* RecordingEngine.swift in Sources */,
+                62347BD82185CCAC0025CAD1 /* GesturePresenter.swift in Sources */,
+                621B7D492185146500E47C4C /* Sample.swift in Sources */,
+                62EB69C421BEC77300383BB9 /* Preprocessor.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3A354EDA2182196F0054DE2C /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3A354EE52182196F0054DE2C /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        3A354EFD2182196F0054DE2C /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                3A354F092182196F0054DE2C /* ExtensionDelegate.swift in Sources */,
+                3AF2FAC121852839007CFA4E /* MotionManager.swift in Sources */,
+                3AF2FAC2218528B6007CFA4E /* CommunicationManager.swift in Sources */,
+                E10D1ED921BDE0BC006B1976 /* Message.swift in Sources */,
+                3A354F072182196F0054DE2C /* InterfaceController.swift in Sources */,
+                62EB69C721BED44B00383BB9 /* Sample.swift in Sources */,
+                3AF2FAC321852932007CFA4E /* RawData.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3A354EE02182196F0054DE2C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3A354EC92182196E0054DE2C /* Airbender */;
-			targetProxy = 3A354EDF2182196F0054DE2C /* PBXContainerItemProxy */;
-		};
-		3A354EEB2182196F0054DE2C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3A354EC92182196E0054DE2C /* Airbender */;
-			targetProxy = 3A354EEA2182196F0054DE2C /* PBXContainerItemProxy */;
-		};
-		3A354EF52182196F0054DE2C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3A354EF12182196F0054DE2C /* Airbender WatchKit App */;
-			targetProxy = 3A354EF42182196F0054DE2C /* PBXContainerItemProxy */;
-		};
-		3A354F042182196F0054DE2C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3A354F002182196F0054DE2C /* Airbender WatchKit Extension */;
-			targetProxy = 3A354F032182196F0054DE2C /* PBXContainerItemProxy */;
-		};
+        3A354EE02182196F0054DE2C /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 3A354EC92182196E0054DE2C /* Airbender */;
+            targetProxy = 3A354EDF2182196F0054DE2C /* PBXContainerItemProxy */;
+        };
+        3A354EEB2182196F0054DE2C /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 3A354EC92182196E0054DE2C /* Airbender */;
+            targetProxy = 3A354EEA2182196F0054DE2C /* PBXContainerItemProxy */;
+        };
+        3A354EF52182196F0054DE2C /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 3A354EF12182196F0054DE2C /* Airbender WatchKit App */;
+            targetProxy = 3A354EF42182196F0054DE2C /* PBXContainerItemProxy */;
+        };
+        3A354F042182196F0054DE2C /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = 3A354F002182196F0054DE2C /* Airbender WatchKit Extension */;
+            targetProxy = 3A354F032182196F0054DE2C /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3A354ED12182196E0054DE2C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A354ED22182196E0054DE2C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3A354ED62182196F0054DE2C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A354ED72182196F0054DE2C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		3A354EF72182196F0054DE2C /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A354EF82182196F0054DE2C /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
+        3A354ED12182196E0054DE2C /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                3A354ED22182196E0054DE2C /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        3A354ED62182196F0054DE2C /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                3A354ED72182196F0054DE2C /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
+        3A354EF72182196F0054DE2C /* Interface.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                3A354EF82182196F0054DE2C /* Base */,
+            );
+            name = Interface.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3A354F10218219700054DE2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		3A354F11218219700054DE2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3A354F13218219700054DE2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C731C9A8CFC43A2E5D97377 /* Pods-Airbender WatchKit Extension.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "Airbender WatchKit Extension/Airbender WatchKit Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BC778NMNV3;
-				INFOPLIST_FILE = "Airbender WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.watchkit.extension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Debug;
-		};
-		3A354F14218219700054DE2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEA407B2CC443E758CAE0591 /* Pods-Airbender WatchKit Extension.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "Airbender WatchKit Extension/Airbender WatchKit Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BC778NMNV3;
-				INFOPLIST_FILE = "Airbender WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.watchkit.extension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Release;
-		};
-		3A354F17218219700054DE2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51134A5A1304C513BE1A2868 /* Pods-Airbender WatchKit App.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BC778NMNV3;
-				IBSC_MODULE = Airbender_WatchKit_Extension;
-				INFOPLIST_FILE = "Airbender WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.watchkit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Debug;
-		};
-		3A354F18218219700054DE2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6F6CC0BD652703DCEC80ED6 /* Pods-Airbender WatchKit App.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BC778NMNV3;
-				IBSC_MODULE = Airbender_WatchKit_Extension;
-				INFOPLIST_FILE = "Airbender WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.watchkit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Release;
-		};
-		3A354F1B218219700054DE2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ED7CC2DE16940BBBB5258A4 /* Pods-Airbender.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Airbender/Airbender.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BC778NMNV3;
-				INFOPLIST_FILE = Airbender/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3A354F1C218219700054DE2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29B7CD843BAB0A2BBC0447AA /* Pods-Airbender.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Airbender/Airbender.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BC778NMNV3;
-				INFOPLIST_FILE = Airbender/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		3A354F1E218219700054DE2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59C1EF2D65AF46CD9F415626 /* Pods-AirbenderTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BC778NMNV3;
-				INFOPLIST_FILE = AirbenderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.AirbenderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airbender.app/Airbender";
-			};
-			name = Debug;
-		};
-		3A354F1F218219700054DE2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CAC9142F839818C8B647D53 /* Pods-AirbenderTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BC778NMNV3;
-				INFOPLIST_FILE = AirbenderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.AirbenderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airbender.app/Airbender";
-			};
-			name = Release;
-		};
-		3A354F21218219700054DE2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42E1AD7D3F65D7B03E4D03D9 /* Pods-AirbenderUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BC778NMNV3;
-				INFOPLIST_FILE = AirbenderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.AirbenderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Airbender;
-			};
-			name = Debug;
-		};
-		3A354F22218219700054DE2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42095FD638B19475BA95DB15 /* Pods-AirbenderUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BC778NMNV3;
-				INFOPLIST_FILE = AirbenderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.AirbenderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Airbender;
-			};
-			name = Release;
-		};
+        3A354F10218219700054DE2C /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+                MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+                MTL_FAST_MATH = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        3A354F11218219700054DE2C /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                MTL_FAST_MATH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-O";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        3A354F13218219700054DE2C /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 0C731C9A8CFC43A2E5D97377 /* Pods-Airbender WatchKit Extension.debug.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+                CODE_SIGN_ENTITLEMENTS = "Airbender WatchKit Extension/Airbender WatchKit Extension.entitlements";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = BC778NMNV3;
+                INFOPLIST_FILE = "Airbender WatchKit Extension/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@executable_path/../../Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.watchkit.extension;
+                PRODUCT_NAME = "${TARGET_NAME}";
+                SDKROOT = watchos;
+                SKIP_INSTALL = YES;
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = 4;
+                WATCHOS_DEPLOYMENT_TARGET = 5.0;
+            };
+            name = Debug;
+        };
+        3A354F14218219700054DE2C /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = EEA407B2CC443E758CAE0591 /* Pods-Airbender WatchKit Extension.release.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+                CODE_SIGN_ENTITLEMENTS = "Airbender WatchKit Extension/Airbender WatchKit Extension.entitlements";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = BC778NMNV3;
+                INFOPLIST_FILE = "Airbender WatchKit Extension/Info.plist";
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@executable_path/../../Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.watchkit.extension;
+                PRODUCT_NAME = "${TARGET_NAME}";
+                SDKROOT = watchos;
+                SKIP_INSTALL = YES;
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = 4;
+                WATCHOS_DEPLOYMENT_TARGET = 5.0;
+            };
+            name = Release;
+        };
+        3A354F17218219700054DE2C /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 51134A5A1304C513BE1A2868 /* Pods-Airbender WatchKit App.debug.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = BC778NMNV3;
+                IBSC_MODULE = Airbender_WatchKit_Extension;
+                INFOPLIST_FILE = "Airbender WatchKit App/Info.plist";
+                PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.watchkit;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SDKROOT = watchos;
+                SKIP_INSTALL = YES;
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = 4;
+                WATCHOS_DEPLOYMENT_TARGET = 5.0;
+            };
+            name = Debug;
+        };
+        3A354F18218219700054DE2C /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = E6F6CC0BD652703DCEC80ED6 /* Pods-Airbender WatchKit App.release.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = BC778NMNV3;
+                IBSC_MODULE = Airbender_WatchKit_Extension;
+                INFOPLIST_FILE = "Airbender WatchKit App/Info.plist";
+                PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.watchkit;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SDKROOT = watchos;
+                SKIP_INSTALL = YES;
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = 4;
+                WATCHOS_DEPLOYMENT_TARGET = 5.0;
+            };
+            name = Release;
+        };
+        3A354F1B218219700054DE2C /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 2ED7CC2DE16940BBBB5258A4 /* Pods-Airbender.debug.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_ENTITLEMENTS = Airbender/Airbender.entitlements;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = BC778NMNV3;
+                INFOPLIST_FILE = Airbender/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                PROVISIONING_PROFILE_SPECIFIER = "";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        3A354F1C218219700054DE2C /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 29B7CD843BAB0A2BBC0447AA /* Pods-Airbender.release.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_ENTITLEMENTS = Airbender/Airbender.entitlements;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = BC778NMNV3;
+                INFOPLIST_FILE = Airbender/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                PROVISIONING_PROFILE_SPECIFIER = "";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
+        3A354F1E218219700054DE2C /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 59C1EF2D65AF46CD9F415626 /* Pods-AirbenderTests.debug.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = BC778NMNV3;
+                INFOPLIST_FILE = AirbenderTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.AirbenderTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airbender.app/Airbender";
+            };
+            name = Debug;
+        };
+        3A354F1F218219700054DE2C /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 8CAC9142F839818C8B647D53 /* Pods-AirbenderTests.release.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = BC778NMNV3;
+                INFOPLIST_FILE = AirbenderTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.AirbenderTests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airbender.app/Airbender";
+            };
+            name = Release;
+        };
+        3A354F21218219700054DE2C /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 42E1AD7D3F65D7B03E4D03D9 /* Pods-AirbenderUITests.debug.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = BC778NMNV3;
+                INFOPLIST_FILE = AirbenderUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.AirbenderUITests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = Airbender;
+            };
+            name = Debug;
+        };
+        3A354F22218219700054DE2C /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 42095FD638B19475BA95DB15 /* Pods-AirbenderUITests.release.xcconfig */;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                DEVELOPMENT_TEAM = BC778NMNV3;
+                INFOPLIST_FILE = AirbenderUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                    "@loader_path/Frameworks",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = at.fhhagenberg.health.AirbenderUITests;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.2;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = Airbender;
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A354EC52182196E0054DE2C /* Build configuration list for PBXProject "Airbender" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A354F10218219700054DE2C /* Debug */,
-				3A354F11218219700054DE2C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3A354F12218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A354F13218219700054DE2C /* Debug */,
-				3A354F14218219700054DE2C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3A354F16218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A354F17218219700054DE2C /* Debug */,
-				3A354F18218219700054DE2C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3A354F1A218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A354F1B218219700054DE2C /* Debug */,
-				3A354F1C218219700054DE2C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3A354F1D218219700054DE2C /* Build configuration list for PBXNativeTarget "AirbenderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A354F1E218219700054DE2C /* Debug */,
-				3A354F1F218219700054DE2C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3A354F20218219700054DE2C /* Build configuration list for PBXNativeTarget "AirbenderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A354F21218219700054DE2C /* Debug */,
-				3A354F22218219700054DE2C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        3A354EC52182196E0054DE2C /* Build configuration list for PBXProject "Airbender" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                3A354F10218219700054DE2C /* Debug */,
+                3A354F11218219700054DE2C /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        3A354F12218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender WatchKit Extension" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                3A354F13218219700054DE2C /* Debug */,
+                3A354F14218219700054DE2C /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        3A354F16218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender WatchKit App" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                3A354F17218219700054DE2C /* Debug */,
+                3A354F18218219700054DE2C /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        3A354F1A218219700054DE2C /* Build configuration list for PBXNativeTarget "Airbender" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                3A354F1B218219700054DE2C /* Debug */,
+                3A354F1C218219700054DE2C /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        3A354F1D218219700054DE2C /* Build configuration list for PBXNativeTarget "AirbenderTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                3A354F1E218219700054DE2C /* Debug */,
+                3A354F1F218219700054DE2C /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        3A354F20218219700054DE2C /* Build configuration list for PBXNativeTarget "AirbenderUITests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                3A354F21218219700054DE2C /* Debug */,
+                3A354F22218219700054DE2C /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = 3A354EC22182196E0054DE2C /* Project object */;
+    };
+    rootObject = 3A354EC22182196E0054DE2C /* Project object */;
 }
