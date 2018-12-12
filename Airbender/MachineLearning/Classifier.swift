@@ -10,7 +10,7 @@ import Foundation
 import CoreML
 
 class Classifier {
-//    let model = GestureDetector()
+    let model = RandomForest()
     private let featureData: [[Double]]
     
     init(featureData: [[Double]]) {
@@ -18,7 +18,7 @@ class Classifier {
     }
     
     func predictGesture() -> String{
-//        guard let gestureDetectorOutput = try? model.prediction(data: featureData) else {
+//        guard let gestureDetectorOutput = try? model.prediction(input: MLMultiArray() else {
 //            fatalError("Unexpected runtime error.")
 //        }
 //        let predictedGesture = gestureDetectorOutput.gesture
