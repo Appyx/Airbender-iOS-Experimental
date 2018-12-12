@@ -12,16 +12,14 @@ import Surge
 class Preprocessor {
 
     var raw: DataFrame
-    var frequency: DataFrame
-    var computed: SampleFrame
+    var processed: SampleFrame
 
     init(frame: DataFrame) throws {
         self.raw = frame
         if raw.checkSampleLengths() == false {
-            throw DimesnsionError.lengthsNotEqual
+            throw DimensionError.lengthsNotEqual
         }
-        self.computed = raw.accX.featurelessCopy()
-        self.frequency=raw.featurelessCopy()
+        self.processed = raw.accX.featurelessCopy()
     }
 
     func resample(toSize: Int) throws {
@@ -45,7 +43,7 @@ class Preprocessor {
         }
         raw.apply { resample(data: $0, toSize: toSize) }
         if raw.checkEqualDimensions() == false {
-            throw DimesnsionError.dimensionsNotEqual
+            throw DimensionError.dimensionsNotEqual
         }
     }
 
@@ -54,17 +52,16 @@ class Preprocessor {
     }
 
     func generateSignalLengths() {
-        for (index, sample) in raw.accX.samples.enumerated() {
-            let count=sample.features.count
-            computed.samples[index].features.append(Double(count))
-        }
+        processed.append(other: raw.accX){[Double($0.count)]}
     }
     
     func generateFFT(){
-        raw.crossApply(target: frequency){fft($0)}
+        let temp=raw.featurelessCopy()
+        temp.append(other: raw){fft($0)}
+        processed.append(other: temp.flatten())
     }
     
-    enum DimesnsionError: Error {
+    enum DimensionError: Error {
         case dimensionsNotEqual
         case lengthsNotEqual
     }

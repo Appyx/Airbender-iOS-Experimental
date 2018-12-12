@@ -23,6 +23,23 @@ class HomeViewController: UIViewController {
         //try! proc.resample(toSize: 100)
         
         
+        let dummy=DataFrame()
+        let data=RawData(timestamp: 0, accX: 1, accY: 2, accZ: 3, gyroX: 4, gyroY: 5, gyroZ: 6)
+        let arr=[data,data,data]
+        dummy.addSamples(factors: Sample.Factors(user: "bobs", gesture: 1), rawData: arr)
+        dummy.addSamples(factors: Sample.Factors(user: "gix", gesture: 2), rawData: arr)
+        
+        let copied=dummy.copy()
+        copied.apply{$0.map{$0*$0}}
+        dummy.append(other: copied)
+        dummy.append(other: dummy.featurelessCopy())
+        dummy.featurelessCopy().append(other: dummy)
+        dummy.append(other: dummy, fun: {[Double($0.count)]})
+        let flat=dummy.flatten()
+        flat.append(other: flat){[Double($0.count)]}
+        
+        
+        
         //let df2=proc.raw
         //let exporter = CSVExporter(appending: false)
         //try! exporter.exportCSVs(frame: df2)
