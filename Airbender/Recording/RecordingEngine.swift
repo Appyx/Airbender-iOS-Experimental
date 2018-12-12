@@ -40,12 +40,8 @@ class RecordingEngine {
     }
 
     func save(participant: String, gesture: Int) {
-        frame.accX.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.accX }))
-        frame.accY.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.accY }))
-        frame.accZ.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.accZ }))
-        frame.gyrX.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.gyrX }))
-        frame.gyrY.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.gyrY }))
-        frame.gyrZ.append(Sample(user: participant, gesture: gesture, features: recordedData.compactMap { $0.gyrZ }))
+        let factors=Sample.Factors(user:participant,gesture:gesture)
+        frame.addRow(factors: factors, rawData: recordedData)
     }
 }
 
@@ -53,6 +49,7 @@ extension RecordingEngine: CommunicationManagerDelegate {
 
     func managerDidReceiveMessage(message: Message) {
         if message.type == .Control && message.getText() == "start-gesture" {
+            clear()
             print("gesture started...")
         }
         if message.type == .Control && message.getText() == "stop-gesture" {
