@@ -51,6 +51,7 @@
 		E126296E21C043EF009D3D21 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126296D21C043EF009D3D21 /* FileReader.swift */; };
 		E126297221C055F8009D3D21 /* Dataframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297121C055F8009D3D21 /* Dataframe.swift */; };
 		E126297621C0805F009D3D21 /* FeatureExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297521C0805F009D3D21 /* FeatureExtractor.swift */; };
+		E126297821C157DC009D3D21 /* FIxedDataframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126297721C157DC009D3D21 /* FIxedDataframe.swift */; };
 		E1DF4A39219077C700A1CA0F /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A37219077C700A1CA0F /* FileWriter.swift */; };
 		E1DF4A3A219077C700A1CA0F /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF4A38219077C700A1CA0F /* CSVExporter.swift */; };
 		FAD242F9E43D7679DF3EA8D6 /* Pods_Airbender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0A2B56C9F61179C4F250C1 /* Pods_Airbender.framework */; };
@@ -169,6 +170,7 @@
 		E126296D21C043EF009D3D21 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
 		E126297121C055F8009D3D21 /* Dataframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataframe.swift; sourceTree = "<group>"; };
 		E126297521C0805F009D3D21 /* FeatureExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureExtractor.swift; sourceTree = "<group>"; };
+		E126297721C157DC009D3D21 /* FIxedDataframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIxedDataframe.swift; sourceTree = "<group>"; };
 		E1DF4A37219077C700A1CA0F /* FileWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
 		E1DF4A38219077C700A1CA0F /* CSVExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVExporter.swift; sourceTree = "<group>"; };
 		E6F6CC0BD652703DCEC80ED6 /* Pods-Airbender WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Airbender WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Airbender WatchKit App/Pods-Airbender WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 				621B7D462185125800E47C4C /* RawData.swift */,
 				621B7D482185146500E47C4C /* Sample.swift */,
 				E126297121C055F8009D3D21 /* Dataframe.swift */,
+				E126297721C157DC009D3D21 /* FIxedDataframe.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -779,6 +782,7 @@
 				E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */,
 				3A354ECE2182196E0054DE2C /* AppDelegate.swift in Sources */,
 				62EB69CE21BED5FC00383BB9 /* RecordingEngine.swift in Sources */,
+				E126297821C157DC009D3D21 /* FIxedDataframe.swift in Sources */,
 				62347BD82185CCAC0025CAD1 /* GesturePresenter.swift in Sources */,
 				621B7D492185146500E47C4C /* Sample.swift in Sources */,
 				62EB69C421BEC77300383BB9 /* PreProcessor.swift in Sources */,
