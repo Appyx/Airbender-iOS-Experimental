@@ -56,9 +56,10 @@ class Preprocessor {
     }
     
     func generateFFT(){
-        let temp=raw.featurelessCopy()
-        temp.append(other: raw){fft($0)}
-        processed.append(other: temp.flatten())
+        let copy=raw.copy()
+        copy.apply{fft($0)}
+        copy.apply{Array($0.dropLast(50))}
+        processed.append(other: copy.flatten())
     }
     
     enum DimensionError: Error {
