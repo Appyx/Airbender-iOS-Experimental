@@ -11,7 +11,7 @@
         <!--Control-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="Control" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Airbender_WatchKit_App" customModuleProvider="target">
+                <controller identifier="Control" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Airbender_WatchKit_Extension">
                     <items>
                         <group width="1" height="1" alignment="center" layout="vertical" id="ZkG-dP-hc4">
                             <items>
@@ -35,7 +35,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="144" y="347"/>
+            <point key="canvasLocation" x="482" y="329"/>
         </scene>
         <!--Airbender-->
         <scene sceneID="6Qb-cc-8de">
@@ -70,7 +70,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="489" y="347"/>
+            <point key="canvasLocation" x="224" y="329"/>
         </scene>
     </scenes>
 </document>

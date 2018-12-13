@@ -25,13 +25,24 @@ class DataFrame {
         gyrZ.add(sample: Sample(factors: factors, features: rawData.compactMap { $0.gyrZ }))
     }
 
-    func apply(fun: ([Double]) -> [Double]) {
-        accX.apply(fun: fun)
-        accY.apply(fun: fun)
-        accZ.apply(fun: fun)
-        gyrX.apply(fun: fun)
-        gyrY.apply(fun: fun)
-        gyrZ.apply(fun: fun)
+    func applyInPlace(fun: ([Double]) -> [Double]) {
+        accX.applyInPlace(fun: fun)
+        accY.applyInPlace(fun: fun)
+        accZ.applyInPlace(fun: fun)
+        gyrX.applyInPlace(fun: fun)
+        gyrY.applyInPlace(fun: fun)
+        gyrZ.applyInPlace(fun: fun)
+    }
+
+    func apply(fun: ([Double]) -> [Double]) -> DataFrame {
+        let temp = featurelessCopy()
+        temp.accX = accX.apply(fun: fun)
+        temp.accY = accY.apply(fun: fun)
+        temp.accZ = accZ.apply(fun: fun)
+        temp.gyrX = gyrX.apply(fun: fun)
+        temp.gyrY = gyrY.apply(fun: fun)
+        temp.gyrZ = gyrZ.apply(fun: fun)
+        return temp
     }
 
     func append(other: DataFrame, fun: ([Double]) -> [Double]) {
@@ -42,6 +53,7 @@ class DataFrame {
         gyrY.append(other: other.gyrY, fun: fun)
         gyrZ.append(other: other.gyrZ, fun: fun)
     }
+
     func append(other: DataFrame) {
         accX.append(other: other.accX)
         accY.append(other: other.accY)
@@ -72,7 +84,7 @@ class DataFrame {
         frame.gyrZ = gyrZ.featurelessCopy()
         return frame
     }
-    
+
     func copy() -> DataFrame {
         let frame = DataFrame()
         frame.accX = accX.copy()
@@ -91,6 +103,17 @@ class DataFrame {
         gyrX.filter(fun: fun)
         gyrY.filter(fun: fun)
         gyrZ.filter(fun: fun)
+    }
+
+    func applyWindow(size: Int, fun: ([Double]) -> Double) -> DataFrame {
+        let temp = featurelessCopy()
+        temp.accX = accX.slidingWindow(size: size, fun: fun)
+        temp.accY = accY.slidingWindow(size: size, fun: fun)
+        temp.accZ = accZ.slidingWindow(size: size, fun: fun)
+        temp.gyrX = gyrX.slidingWindow(size: size, fun: fun)
+        temp.gyrY = gyrY.slidingWindow(size: size, fun: fun)
+        temp.gyrZ = gyrZ.slidingWindow(size: size, fun: fun)
+        return temp
     }
 
     func checkEqualDimensions() -> Bool {

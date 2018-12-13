@@ -8,10 +8,17 @@
 
 import Foundation
 
+protocol RecordingEngineDelegate {
+    func gestureComplete()
+}
+
 class RecordingEngine {
     private let commManager = CommunicationManager.shared
     private var recordedData = [RawData]()
     private let frame = DataFrame()
+    var delegate:RecordingEngineDelegate?=nil
+    
+    
 
     init() {
         commManager.delegate = self
@@ -31,7 +38,7 @@ class RecordingEngine {
     }
 
     func export() {
-        let exporter = CSVExporter()
+        let exporter = CSVExporter(appending: false)
         do {
             try exporter.exportCSVs(frame: frame)
         } catch {
@@ -42,6 +49,7 @@ class RecordingEngine {
     func save(participant: String, gesture: Int) {
         let factors=Sample.Factors(user:participant,gesture:gesture)
         frame.addSamples(factors: factors, rawData: recordedData)
+        export()
     }
 }
 
@@ -53,6 +61,7 @@ extension RecordingEngine: CommunicationManagerDelegate {
             print("gesture started...")
         }
         if message.type == .Control && message.getText() == "stop-gesture" {
+            delegate?.gestureComplete()
             print("gesture stopped...")
         }
         if message.type == .Data {

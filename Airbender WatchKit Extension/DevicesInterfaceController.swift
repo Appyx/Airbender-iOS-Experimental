@@ -13,12 +13,12 @@ import Foundation
 class DevicesInterfaceController: WKInterfaceController {
 
     var devices = ["Televison", "MacBook", "Spotify", "Youtube"]
+    let commSession = CommunicationManager.shared
     
     @IBOutlet weak var devicesTable: WKInterfaceTable!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
         // Configure interface objects here.
         devicesTable.setNumberOfRows(devices.count, withRowType: "DeviceRow")
         
@@ -31,6 +31,8 @@ class DevicesInterfaceController: WKInterfaceController {
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        commSession.delegate = self
+        commSession.startSession()
         super.willActivate()
     }
 
@@ -43,5 +45,18 @@ class DevicesInterfaceController: WKInterfaceController {
         let device = devices[rowIndex]
         
         pushController(withName: "Control", context: device)
+    }
+}
+extension DevicesInterfaceController: CommunicationManagerDelegate {
+    func managerDidReceiveMessage(message: Message) {
+        if message.type == .Control && message.getText() == "start-recording" {
+            print("recording started")
+            DispatchQueue.main.sync {
+                pushController(withName: "Control", context: "recording")
+            }
+        }
+        if message.type == .Control && message.getText() == "stop-recording" {
+            print("recording stopped")
+        }
     }
 }

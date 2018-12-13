@@ -14,19 +14,19 @@ import HealthKit
 class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
 
     @IBOutlet weak var buttonBackground: WKInterfaceGroup!
-    
+
     let motionManager = MotionManager()
     let commSession = CommunicationManager.shared
     var workoutSession: HKWorkoutSession? = nil
     let healthStore = HKHealthStore()
     var isRecording = false
-    
+
     var device: String?
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         commSession.delegate = self
-        
+
         if let device = context as? String {
             self.device = device
             self.setTitle(device)
@@ -132,6 +132,8 @@ extension InterfaceController: CommunicationManagerDelegate {
         if message.type == .Control && message.getText() == "stop-recording" {
             print("recording stopped")
             stopWorkout()
+            DispatchQueue.main.sync {
+                popToRootController() }
         }
     }
 }

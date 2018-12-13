@@ -41,7 +41,7 @@ class Preprocessor {
             }
             return sampledData
         }
-        raw.apply { resample(data: $0, toSize: toSize) }
+        raw.applyInPlace { resample(data: $0, toSize: toSize) }
         if raw.checkEqualDimensions() == false {
             throw DimensionError.dimensionsNotEqual
         }
@@ -52,16 +52,31 @@ class Preprocessor {
     }
 
     func generateSignalLengths() {
-        processed.append(other: raw.accX){[Double($0.count)]}
+        processed.append(other: raw.accX) { [Double($0.count)] }
+    }
+
+    func generateMean() {
+        let result=raw.applyWindow(size: 20) { mean($0) }
+        processed.append(other: result.flatten())
     }
     
-    func generateFFT(){
-        let copy=raw.copy()
-        copy.apply{fft($0)}
-        copy.apply{Array($0.dropLast(50))}
-        processed.append(other: copy.flatten())
+    
+    func generateMax() {
+        let result=raw.applyWindow(size: 20) { max($0) }
+        processed.append(other: result.flatten())
     }
     
+    func generateMin() {
+        let result=raw.applyWindow(size: 20) { min($0) }
+        processed.append(other: result.flatten())
+    }
+
+    func generateFFT() {
+        let frequency = raw.apply { fft($0) }
+        let filtered = frequency.apply { Array($0.dropLast(50)) }
+        processed.append(other: filtered.flatten())
+    }
+
     enum DimensionError: Error {
         case dimensionsNotEqual
         case lengthsNotEqual

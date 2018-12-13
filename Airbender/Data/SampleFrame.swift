@@ -27,14 +27,49 @@ class SampleFrame {
         return frame
     }
 
-    func apply(fun: ([Double]) -> [Double]) {
+    func applyInPlace(fun: ([Double]) -> [Double]) {
         samples.forEach { $0.features = fun($0.features) }
+    }
+    
+    func slidingWindow(size: Int, fun: ([Double]) -> Double)->SampleFrame {
+        let temp = featurelessCopy()
+        temp.append(other: self) { features in
+            var result: [Double] = []
+            let windows = features.count / size
+            for i in 0..<windows {
+                let window = Array(features[i*size..<(i + 1)*size])
+                result.append(fun(window))
+            }
+            return result
+        }
+        return temp
+    }
+    
+    func removeFeatures(at indexes:[Int]) throws {
+        let sorted=indexes.sorted(by: >)
+        for sample in samples{
+            if sample.features.count < sorted.first!{
+                 throw SampleFrameError.indexOutOfBounds
+            }else{
+                for index in indexes {
+                    sample.features.remove(at: index)
+                }
+            }
+        }
     }
 
     func append(other: SampleFrame, fun: ([Double]) -> [Double]) {
         for (index, sample) in samples.enumerated() {
             sample.features.append(contentsOf: fun(other.samples[index].features))
         }
+    }
+    
+    func apply(fun: ([Double]) -> [Double])->SampleFrame {
+        let temp=featurelessCopy()
+        for (index, sample) in samples.enumerated() {
+            temp.samples[index].features.append(contentsOf:fun(sample.features))
+        }
+        return temp
     }
 
     func append(other: SampleFrame) {
@@ -48,5 +83,9 @@ class SampleFrame {
     func add(sample: Sample) {
         samples.append(sample)
     }
+  
+}
 
+enum SampleFrameError:Error{
+    case indexOutOfBounds
 }

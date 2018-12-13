@@ -18,8 +18,10 @@ class GestureViewController: UIViewController {
     var gestureID: Int = -1
     let engine=RecordingEngine()
     
+    
     override func viewWillAppear(_ animated: Bool) {
         loadNextGesture()
+        engine.delegate=self
         engine.startRecording()
     }
     
@@ -66,6 +68,14 @@ class GestureViewController: UIViewController {
     @IBAction func cancelRecording(_ sender: Any) {
         presentCancelAlert()
     }
+}
+
+extension GestureViewController:RecordingEngineDelegate{
+    func gestureComplete() {
+        presentRetryAlert()
+    }
+    
+    
 }
 
 

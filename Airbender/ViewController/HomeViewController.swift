@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Surge
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var gestureNameLabel: UILabel!
@@ -16,27 +16,33 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //let importer = CSVImporter()
-        //let df = try! importer.importCSVs()
-        //let proc = try! Preprocessor(frame: df)
-        //proc.dropEmptySamples()
-        //try! proc.resample(toSize: 100)
+//        let importer = CSVImporter()
+//        let df = try! importer.importCSVs()
         
         
-        let dummy=DataFrame()
-        let data=RawData(timestamp: 0, accX: 1, accY: 2, accZ: 3, gyroX: 4, gyroY: 5, gyroZ: 6)
-        let arr=[data,data,data]
-        dummy.addSamples(factors: Sample.Factors(user: "bobs", gesture: 1), rawData: arr)
-        dummy.addSamples(factors: Sample.Factors(user: "gix", gesture: 2), rawData: arr)
         
-        let copied=dummy.copy()
-        copied.apply{$0.map{$0*$0}}
-        dummy.append(other: copied)
-        dummy.append(other: dummy.featurelessCopy())
-        dummy.featurelessCopy().append(other: dummy)
-        dummy.append(other: dummy, fun: {[Double($0.count)]})
-        let flat=dummy.flatten()
-        flat.append(other: flat){[Double($0.count)]}
+        
+//        let proc = try! Preprocessor(frame: df)
+//        proc.dropEmptySamples()
+//        try! proc.resample(toSize: 100)
+        
+        
+//        let dummy=DataFrame()
+//        let data=RawData(timestamp: 0, accX: 1, accY: 2, accZ: 3, gyroX: 4, gyroY: 5, gyroZ: 6)
+//        let arr=[data,data,data]
+//        dummy.addSamples(factors: Sample.Factors(user: "bobs", gesture: 1), rawData: arr)
+//        dummy.addSamples(factors: Sample.Factors(user: "gix", gesture: 2), rawData: arr)
+//
+//        let copied=dummy.copy()
+//        copied.apply{$0.map{$0*$0}}
+//        dummy.append(other: copied)
+//        let slided=dummy.applyWindow(size: 3){mean($0)}
+//        dummy.append(other: dummy.featurelessCopy())
+//        dummy.featurelessCopy().append(other: dummy)
+//        dummy.append(other: dummy, fun: {[Double($0.count)]})
+//        let flat=dummy.flatten()
+//        flat.append(other: flat){[Double($0.count)]}
+//        try! flat.removeFeatures(at: [41])
         
         
         
