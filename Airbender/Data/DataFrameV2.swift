@@ -12,9 +12,11 @@ class DataFrameV2 {
     
     private var dimensions:[SampleFrame]=[]
     
-    init(adapter:DataFrameAdapter) throws {
-        let dim=adapter.getDimensions()
-        self.init(dimensions: dim)
+    private init(){}
+    
+    convenience init(adapter:DataFrameAdapter) throws {
+        self.init()
+        dimensions=adapter.getDimensions()
         try checkForMatchingDimensions()
     }
     
@@ -91,12 +93,12 @@ class DataFrameV2 {
         return new
     }
     
-    func append(other: DataFrameV2, fun: ([Double]) -> [Double]) {
-         append(other.apply(fun: fun))
+    func append(other: DataFrameV2, fun: ([Double]) -> [Double]) throws {
+        try append(other: other.apply(fun: fun))
     }
     
     func append(other: DataFrameV2) throws{
-        try checkDimensionCount(other)
+        try checkDimensionCount(other:other)
         for (index, element) in dimensions.enumerated(){
             element.append(other: other.dimensions[index])
         }
@@ -119,7 +121,7 @@ class DataFrameV2 {
     func applyWindow(size: Int, fun: ([Double]) -> Double) -> DataFrameV2 {
         let new = DataFrameV2()
         for (_, element) in dimensions.enumerated(){
-            new.dimensions.append(other: element.slidingWindow(size: size, fun: fun))
+            new.dimensions.append(element.slidingWindow(size: size, fun: fun))
         }
         return new
     }
