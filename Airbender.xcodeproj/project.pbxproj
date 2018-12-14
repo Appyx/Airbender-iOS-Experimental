@@ -48,6 +48,8 @@
 		E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
 		E10D1ED921BDE0BC006B1976 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1ED721BDE0BC006B1976 /* Message.swift */; };
 		E10D1EDE21BF0E05006B1976 /* ProcessingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */; };
+		E112D12521C320C700AE2E41 /* CSVFeatureExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112D12421C320C700AE2E41 /* CSVFeatureExporter.swift */; };
+		E112D12721C3381600AE2E41 /* CoreGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E112D12621C3381600AE2E41 /* CoreGestures.swift */; };
 		E126296B21BF277E009D3D21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF221BF0D910048C5EC /* HomeViewController.swift */; };
 		E126296C21BF2783009D3D21 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDABF421BF10AF0048C5EC /* HistoryTableViewController.swift */; };
 		E126296E21C043EF009D3D21 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126296D21C043EF009D3D21 /* FileReader.swift */; };
@@ -170,6 +172,8 @@
 		8CAC9142F839818C8B647D53 /* Pods-AirbenderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirbenderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirbenderTests/Pods-AirbenderTests.release.xcconfig"; sourceTree = "<group>"; };
 		E10D1ED721BDE0BC006B1976 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E10D1EDD21BF0E05006B1976 /* ProcessingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingEngine.swift; sourceTree = "<group>"; };
+		E112D12421C320C700AE2E41 /* CSVFeatureExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVFeatureExporter.swift; sourceTree = "<group>"; };
+		E112D12621C3381600AE2E41 /* CoreGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGestures.swift; sourceTree = "<group>"; };
 		E126296D21C043EF009D3D21 /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
 		E126297121C055F8009D3D21 /* DataFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFrame.swift; sourceTree = "<group>"; };
 		E126297921C19E01009D3D21 /* SampleFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFrame.swift; sourceTree = "<group>"; };
@@ -329,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				3AEDABFA21BF19BB0048C5EC /* Gesture.swift */,
+				E112D12621C3381600AE2E41 /* CoreGestures.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 				E1DF4A37219077C700A1CA0F /* FileWriter.swift */,
 				E126296D21C043EF009D3D21 /* FileReader.swift */,
 				62EB69CA21BED52B00383BB9 /* CSVImporter.swift */,
+				E112D12421C320C700AE2E41 /* CSVFeatureExporter.swift */,
 			);
 			path = CSV;
 			sourceTree = "<group>";
@@ -783,6 +789,8 @@
 				621B7D472185125800E47C4C /* RawData.swift in Sources */,
 				3A354ED02182196E0054DE2C /* MainViewController.swift in Sources */,
 				E10D1ED821BDE0BC006B1976 /* Message.swift in Sources */,
+				E112D12721C3381600AE2E41 /* CoreGestures.swift in Sources */,
+				E112D12521C320C700AE2E41 /* CSVFeatureExporter.swift in Sources */,
 				3A354ECE2182196E0054DE2C /* AppDelegate.swift in Sources */,
 				62EB69CE21BED5FC00383BB9 /* RecordingEngine.swift in Sources */,
 				62347BD82185CCAC0025CAD1 /* GesturePresenter.swift in Sources */,

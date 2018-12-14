@@ -11,19 +11,23 @@ import CoreML
 
 class Classifier {
     let model = RandomForest()
-    private let featureData: [[Double]]
+    private let frame: SampleFrame
     
-    init(featureData: [[Double]]) {
-        self.featureData = featureData
+    init(frame: SampleFrame) {
+        self.frame = frame
     }
     
-    func predictGesture() -> String{
-//        guard let gestureDetectorOutput = try? model.prediction(input: MLMultiArray() else {
-//            fatalError("Unexpected runtime error.")
-//        }
-//        let predictedGesture = gestureDetectorOutput.gesture
-//
-//        return gestureFormatter.string(for: predictedGesture)
-        return ""
+    func predictGesture() -> Int{
+        guard let input = try? MLMultiArray(shape:[1,132], dataType:MLMultiArrayDataType.double) else {
+            fatalError("Unexpected runtime error. MLMultiArray")
+        }
+        for (index, element) in frame.samples[0].features.enumerated() {
+            input[index] = NSNumber(floatLiteral: element)
+        }
+        let model = RandomForest()
+        guard let gestureDetectorOutput = try? model.prediction(input: input) else {
+            fatalError("Unexpected runtime error. model.prediction")
+        }
+        return Int(gestureDetectorOutput.classLabel)
     }
 }

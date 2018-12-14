@@ -17,8 +17,6 @@ class RecordingEngine {
     private var recordedData = [RawData]()
     private let frame = DataFrame()
     var delegate:RecordingEngineDelegate?=nil
-    
-    
 
     init() {
         commManager.delegate = self

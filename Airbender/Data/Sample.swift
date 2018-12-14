@@ -42,5 +42,10 @@ class Sample{
             self.user=user
             self.gesture=gesture
         }
+        
+        convenience init(){
+            self.init(user: "unknown",gesture: -1)
+        }
     }
+
 }

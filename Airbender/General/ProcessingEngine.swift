@@ -8,12 +8,19 @@
 
 import Foundation
 
+protocol ProcessingEngineDelegate {
+    func gestureDestected(gesture:Gesture)
+}
+
 class ProcessingEngine {
+    static let shared = ProcessingEngine()
     
     let commManager = CommunicationManager.shared
     var buffer = [RawData]()
+    var delegate:ProcessingEngineDelegate?=nil
+    var lastDetected:Gesture?=nil
     
-    init() {
+    private init() {
         commManager.delegate = self
         commManager.startSession()
     }
@@ -24,7 +31,23 @@ class ProcessingEngine {
     
     
     func gestureComplete(){
-        //do something with recorded data
+        let df=DataFrame()
+        df.addSamples(factors: Sample.Factors(), rawData: buffer)
+        let proc = try! Preprocessor(frame: df)
+        
+        try! proc.applyResampling(toSize: 50)
+        proc.generateFrequencies(cutoff: 20)
+        proc.generateMean(windowSize: 50)
+        proc.generateMedian(windowSize: 50)
+        
+        let classifier=Classifier(frame: proc.processed)
+        let gesture=classifier.predictGesture()
+        
+        let gestures=CoreGestures()
+        lastDetected=gestures.get(id: gesture)
+        DispatchQueue.main.sync {
+            delegate?.gestureDestected(gesture: lastDetected!)
+        }
     }
     
 }
