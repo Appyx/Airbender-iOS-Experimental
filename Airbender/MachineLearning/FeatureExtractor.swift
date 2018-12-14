@@ -1,73 +1,29 @@
 //
-//  MLPreProcessor.swift
+//  FeatureExtractor.swift
 //  Airbender
 //
-//  Created by Robert Gstöttner, Christopher Ebner, Manuel Mühlschuster on 14.11.18.
-//  Copyright © 2018 Appyx. All rights reserved.
+//  Created by Christopher Ebner on 14.12.18.
+//  Copyright © 2018 FH Hagenberg. All rights reserved.
 //
 
 import Foundation
 import Surge
 
-class Preprocessor {
-
-    var raw: DataFrame
+class FeatureExtractor{
+    private let input:DataFrame
     var processed: SampleFrame
     var featureInfo: [String] = []
-
-    init(frame: DataFrame) throws {
-        self.raw = frame
-        if raw.checkSampleLengths() == false {
-            throw DimensionError.lengthsNotEqual
-        }
-        self.processed = raw.accX.featurelessCopy()
-    }
-
-    func applyResampling(toSize: Int) throws {
-        func resample(data: [Double], toSize: Int) -> [Double] {
-            let sampleFactor = Double(data.count) / Double(toSize)
-            var fraction = 0.00
-
-            print("sample factor: \(sampleFactor)")
-            print("original data size: \(data.count)")
-
-            var sampledData = [Double]()
-            var i = 0
-            while i < data.count {
-                let step = Int(floor(sampleFactor + fraction))
-                fraction = (sampleFactor + fraction).truncatingRemainder(dividingBy: 1) + 0.000001
-
-                sampledData.append(data[i])
-                i += step
-            }
-            return sampledData
-        }
-        raw.applyInPlace { resample(data: $0, toSize: toSize) }
-        if raw.checkEqualDimensions() == false {
-            throw DimensionError.dimensionsNotEqual
-        }
-    }
-
-    func applyEmptySampleFilter() {
-        raw.filter { $0.features.count == 0 }
+    
+    init(input: DataFrame) {
+        self.input=input
+        processed=input.featurelessCopy().flatten()
     }
     
-    func applyLowpass(cutoff: Int) {  //TODO: check math
-        let transformed = raw.apply { fft($0) }
-        let filtered = transformed.apply {
-            let step = 50 / $0.count
-            let validRange = cutoff / step
-            let toDrop = $0.count - validRange
-            return Array($0.dropLast(toDrop)) }
-        filtered.applyInPlace { fft($0) }
-        raw = filtered
-    }
-
     func generateSignalLengths() {
         featureInfo.append("SignalLength")
-        processed.append(other: raw.accX) { [Double($0.count)] }
+        processed.append(other: input.accX) { [Double($0.count)] }
     }
-
+    
     func generateMean(windowSize: Int) {
         featureInfo.append("\(windowSize) times mean accX")
         featureInfo.append("\(windowSize) times mean accY")
@@ -75,10 +31,10 @@ class Preprocessor {
         featureInfo.append("\(windowSize) times mean gyrX")
         featureInfo.append("\(windowSize) times mean gyrY")
         featureInfo.append("\(windowSize) times mean gyrZ")
-        let result = raw.applyWindow(size: windowSize) { mean($0) }
+        let result = input.applyWindow(size: windowSize) { mean($0) }
         processed.append(other: result.flatten())
     }
-
+    
     func generateMax(windowSize: Int) {
         featureInfo.append("\(windowSize) times max accX")
         featureInfo.append("\(windowSize) times max accY")
@@ -86,10 +42,10 @@ class Preprocessor {
         featureInfo.append("\(windowSize) times max gyrX")
         featureInfo.append("\(windowSize) times max gyrY")
         featureInfo.append("\(windowSize) times max gyrZ")
-        let result = raw.applyWindow(size: windowSize) { max($0) }
+        let result = input.applyWindow(size: windowSize) { max($0) }
         processed.append(other: result.flatten())
     }
-
+    
     func generateMin(windowSize: Int) {
         featureInfo.append("\(windowSize) times min accX")
         featureInfo.append("\(windowSize) times min accY")
@@ -97,7 +53,7 @@ class Preprocessor {
         featureInfo.append("\(windowSize) times min gyrX")
         featureInfo.append("\(windowSize) times min gyrY")
         featureInfo.append("\(windowSize) times min gyrZ")
-        let result = raw.applyWindow(size: windowSize) { min($0) }
+        let result = input.applyWindow(size: windowSize) { min($0) }
         processed.append(other: result.flatten())
     }
     
@@ -113,10 +69,10 @@ class Preprocessor {
             let index=arr.count/2
             return arr[index]
         }
-        let result = raw.applyWindow(size: windowSize) {median($0)}
+        let result = input.applyWindow(size: windowSize) {median($0)}
         processed.append(other: result.flatten())
     }
-
+    
     func generateZeroCrossingRate() {  //TODO: check math
         featureInfo.append("zero-crossing-rate accX")
         featureInfo.append("zero-crossing-rate accY")
@@ -124,7 +80,7 @@ class Preprocessor {
         featureInfo.append("zero-crossing-rate gyrX")
         featureInfo.append("zero-crossing-rate gyrY")
         featureInfo.append("zero-crossing-rate gyrZ")
-        let result = raw.apply { arr in
+        let result = input.apply { arr in
             var counter = 0
             var high = true
             arr.forEach { it in
@@ -141,9 +97,10 @@ class Preprocessor {
         }
         processed.append(other: result.flatten())
     }
-
+    
+    
     func generateFrequencies(cutoff: Int) {  //TODO: check math
-        let transformed = raw.apply { fft($0) }
+        let transformed = input.apply { fft($0) }
         var validRange = 0
         let filtered = transformed.apply {
             let step = 50 / $0.count
@@ -156,14 +113,9 @@ class Preprocessor {
         featureInfo.append("\(validRange) freqencies gyrX")
         featureInfo.append("\(validRange) freqencies gyrY")
         featureInfo.append("\(validRange) freqencies gyrZ")
-
+        
         processed.append(other: filtered.flatten())
     }
-
-    enum DimensionError: Error {
-        case dimensionsNotEqual
-        case lengthsNotEqual
-    }
+    
+    
 }
-
-

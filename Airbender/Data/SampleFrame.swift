@@ -16,22 +16,24 @@ class SampleFrame {
     }
 
     func featurelessCopy() -> SampleFrame {
-        let frame = SampleFrame()
-        frame.samples = factors.map { Sample(factors: $0, features: []) }
-        return frame
+        let new = SampleFrame()
+        new.samples = factors.map { Sample(factors: $0, features: []) }
+        return new
     }
     
     func copy()->SampleFrame{
-        let frame = featurelessCopy()
-        frame.append(other: self)
-        return frame
+        let new = SampleFrame()
+        samples.forEach{
+            new.samples.append($0)
+        }
+        return new
     }
 
     func applyInPlace(fun: ([Double]) -> [Double]) {
         samples.forEach { $0.features = fun($0.features) }
     }
     
-    func slidingWindow(size: Int, fun: ([Double]) -> Double)->SampleFrame {
+    func slidingWindow(size: Int, fun: ([Double]) -> Double)->SampleFrame { //TODO: export function
         let temp = featurelessCopy()
         temp.append(other: self) { features in
             var result: [Double] = []
@@ -57,12 +59,6 @@ class SampleFrame {
             }
         }
     }
-
-    func append(other: SampleFrame, fun: ([Double]) -> [Double]) {
-        for (index, sample) in samples.enumerated() {
-            sample.features.append(contentsOf: fun(other.samples[index].features))
-        }
-    }
     
     func apply(fun: ([Double]) -> [Double])->SampleFrame {
         let temp=featurelessCopy()
@@ -72,18 +68,24 @@ class SampleFrame {
         return temp
     }
 
+    func append(other: SampleFrame, fun: ([Double]) -> [Double]) {
+        //TODO: check for equal row count and col count
+        for (index, sample) in samples.enumerated() {
+            sample.features.append(contentsOf: fun(other.samples[index].features))
+        }
+    }
+
     func append(other: SampleFrame) {
         append(other: other, fun: { $0 })
     }
 
-    func filter(fun: (Sample) -> Bool) {
+    func filter(fun: (Sample) -> Bool) { //TODO: rename
         samples.removeAll { fun($0) }
     }
 
     func add(sample: Sample) {
         samples.append(sample)
     }
-  
 }
 
 enum SampleFrameError:Error{
