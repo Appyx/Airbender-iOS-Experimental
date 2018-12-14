@@ -2,8 +2,8 @@
 //  WatchSessionManager.swift
 //  Airbender
 //
-//  Created by Manuel Mühlschuster on 28.10.18.
-//  Copyright © 2018 FH Hagenberg. All rights reserved.
+//  Created by Robert Gstöttner, Christopher Ebner, Manuel Mühlschuster on 14.11.18.
+//  Copyright © 2018 Appyx. All rights reserved.
 //
 
 import Foundation

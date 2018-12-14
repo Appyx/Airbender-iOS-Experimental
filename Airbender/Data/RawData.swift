@@ -2,8 +2,8 @@
 //  AccelerometerProcessedData.swift
 //  SensorRecordingApp
 //
-//  Created by Christopher Ebner on 22.08.18.
-//  Copyright © 2018 appyx. All rights reserved.
+//  Created by Robert Gstöttner, Christopher Ebner, Manuel Mühlschuster on 14.11.18.
+//  Copyright © 2018 Appyx. All rights reserved.
 //
 
 import Foundation

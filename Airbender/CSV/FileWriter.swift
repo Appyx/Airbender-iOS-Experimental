@@ -2,8 +2,8 @@
 //  Exporter.swift
 //  SmartRing
 //
-//  Created by Robert Gstöttner on 01.11.18.
-//  Copyright © 2018 Robert Gstöttner. All rights reserved.
+//  Created by Robert Gstöttner, Christopher Ebner, Manuel Mühlschuster on 14.11.18.
+//  Copyright © 2018 Appyx. All rights reserved.
 //
 
 import Foundation
